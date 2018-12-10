@@ -1,2 +1,8 @@
-<!--pages/shouye/shouye.wxml-->
-<text>pages/shouye/shouye.wxml</text>
+<swiper class="post-swiper" indicator-dots='true' autoplay='true' interval='5000'>
+ <swiper-item>
+  <image src="/images/11.png" class='post-swiper-img'></image>
+  </swiper-item>
+  <swiper-item>
+  <image src="/images/22.png" class='post-swiper-img'></image>
+  </swiper-item>
+</swiper>

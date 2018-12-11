@@ -13,12 +13,14 @@
     "pages/yonghu/yonghu"
 
   ],
+ 
+  
   "window": {
-    "backgroundColor": "#F6F6F6",
+    "background-Color": "ffffff",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#4876FF",
+    "navigationBarTitleText": "云合未来",
+    "navigationBarTextStyle": "light"
   },
   "tabBar": {
     "color": "#dddddd",
@@ -48,7 +50,5 @@
       }
     ]
   }
-  {
-  "cloud": true
-    }
+ 
 }

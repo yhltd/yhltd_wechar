@@ -1,13 +1,88 @@
-<<<<<<< HEAD
+
 <!--pages/shouye/shouye.wxml-->
-<text></text>
-=======
-<swiper class="post-swiper" indicator-dots='true' autoplay='true' interval='5000'>
- <swiper-item>
-  <image src="/images/11.png" class='post-swiper-img'></image>
-  </swiper-item>
-  <swiper-item>
-  <image src="/images/22.png" class='post-swiper-img'></image>
-  </swiper-item>
-</swiper>
->>>>>>> origin/master
+<view class="swiper-yangshi">
+ <swiper class="post-swiper" indicator-dots='true' autoplay='true' interval='5000'>
+   <swiper-item>
+    <image src="/pages/images/11.png" class='post-swiper-img'></image>
+   </swiper-item>
+   <swiper-item>
+    <image src="/pages/images/22.png" class='post-swiper-img'></image>
+   </swiper-item>
+  </swiper>
+</view>
+  <view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+    <view>
+     <block wx:for="{{categoryList}}" wx:key="">
+     <block wx:for="{{item}}" wx:key="">
+      <view class="category-info">
+        <image src="{{item.src}}" 
+        class="category-image"></image>
+        <view class="category-text">{{item.name}}</view>
+      </view>
+      </block>
+      
+     </block>
+    </view>
+     <view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+    <block>
+        <image src="/pages/images/gongsi1.png" class='gongsi-img'></image>
+        <image src="/pages/images/gongsi2.png" class='gongsi-img'></image>
+        </block>
+    <view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+    <view class="liansifangshi">案例展示</view>
+
+<block wx:for="{{anlizhanshi}}" wx:key="">
+     <block wx:for="{{item}}" wx:key="">
+      <view class="anlizhanshi1">
+        <image src="{{item.src}}" 
+        class="anlitupian"></image>
+        <view class="category-text">{{item.name}}</view>
+      </view>
+      </block>
+     </block>
+
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine">
+  </view>
+</view>
+
+<view class="liansifangshi"> 行业资讯</view>
+
+<block class="zixun">
+ <view > 
+  <image class="zixun-image" src="/pages/images/xiaochengxuzixun.png" >
+ </image>
+ <view class="zixun-text">什么是小程序？</view>
+ </view>
+   <!-- <view class="zixun-text">什么是小程序？</view> -->
+</block>
+
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine">
+  </view>
+</view>
+    <view class="liansifangshi">联系我们</view>
+    
+   <view >
+    <view class="liansifangshi">云合未来计算机技术有限公司</view>
+    <view class="liansifangshi">地址：大连市高新园区爱贤街10号1204室</view>
+   <view class="liansifangshi"> 联系电话：16619776280</view>
+    <view class="liansifangshi">邮箱：512250428@qq.com</view>
+   <view class="liansifangshi"> QQ：512250428</view>
+    </view> 
+    <view class="shuiyin">
+    云合未来
+    <view class="dianhuashuiyin">16619776280</view>
+    </view>
+

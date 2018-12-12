@@ -2,6 +2,10 @@
   "pages": [
     "pages/shouye/shouye",
     "pages/index/index",
+    "pages/gongsijieshao/gongsijieshao",
+    "pages/anlixiangqing/anlixiangqing",
+    "pages/hangyeremen/hangyeremen",
+    "pages/jiaruwomen/jiaruwomen",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
@@ -16,9 +20,9 @@
  
   
   "window": {
-    "background-Color": "ffffff",
+    "background-Color": "#ffffff",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#4876FF",
+    "navigationBarBackgroundColor": "#ff0000",
     "navigationBarTitleText": "云合未来",
     "navigationBarTextStyle": "light"
   },

@@ -1,0 +1,8 @@
+/* pages/jiaruwomen/jiaruwomen.wxss */
+.lianxi{
+  height: 80rpx;
+  width:  80rpx
+}
+.lianxiwomen{
+   flex-direction: column
+}

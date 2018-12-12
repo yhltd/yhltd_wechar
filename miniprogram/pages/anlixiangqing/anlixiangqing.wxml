@@ -1,0 +1,10 @@
+<!--pages/anlixiangqing/anlixiangqing.wxml-->
+<block wx:for="{{anlizhanshi}}" wx:key="">
+     <block wx:for="{{item}}" wx:key="">
+      <view class="anlizhanshi2">
+        <image src="{{item.src}}" 
+        class="anli-image"></image>
+        <view class="anli-text">{{item.name}}</view>
+      </view>
+      </block>
+     </block>

@@ -5,3 +5,60 @@
   align-items: center;
   box-sizing: border-box;
 } 
+.lianxiwomen{
+  display: flex;
+ justify-content: center; 
+}
+.lianxiwomen-image{
+   width: 500rpx;
+  height: 450rpx;
+}
+.xiantiao{
+ flex-direction:row;
+  justify-content: center;
+
+}
+.flex-wrp{
+  height: 20px;
+  display:flex;
+  background-color: #FFFFFF;
+}
+.xiantiao-image1{
+width: 100rpx;
+  height: 50rpx;
+  left: 130rpx;
+}
+.anlizhanshi1{
+  display: inline-block;
+  text-align: center;
+  
+  margin-top: 20rpx;
+  height: 150rpx;
+  width: 50%;
+}
+
+.anlitupian{
+  width: 300rpx;
+  height: 250rpx;
+}
+.zixun-text{
+margin:50rpx 150rpx 0rpx 0rpx;
+ float:right;
+}
+.anli-text{
+  margin:20rpx 0rpx 0rpx 0rpx;
+}
+.anli-image{
+  width: 300rpx;
+  height: 250rpx;
+   float:left;
+}
+.anlizhanshi2{
+  display: inline-block;
+  text-align: left;
+  
+  margin-top: 20rpx;
+  height: 250rpx;
+  width: 100%;
+
+}

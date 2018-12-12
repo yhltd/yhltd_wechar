@@ -1,29 +1,32 @@
-// pages/xinxi/xinxi.js
+var app=getApp()
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    categoryList: {
-      pageone: [
+    // categoryList: {
+      items: [
         {
         name: "公司简介",
-        src: "/pages/images/gongsi.png"
+        src: "/pages/images/gongsi.png",
+        url: "/pages/gongsijieshao/gongsijieshao",
       }, 
       {
         name: "案例详情",
-        src: "/pages/images/xihuan.jpg"
+        src: "/pages/images/xihuan.jpg",
+        url: "/pages/anlixiangqing/anlixiangqing",
       }, 
       {
         name: "行业热门",
-        src: "/pages/images/tag.png"
+        src: "/pages/images/tag.png",
+        url: "/pages/hangyeremen/hangyeremen",
       },
         {
           name: "加入我们",
-          src: "/pages/images/telephone.png"
+          src: "/pages/images/telephone.png",
+          url: "/pages/jiaruwomen/jiaruwomen",
         }
-      ]},
+      ]
+      // }
+      ,
     anlizhanshi: {
       pageone: [
         {
@@ -49,60 +52,5 @@ Page({
 
   ,
 
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
+  
 })

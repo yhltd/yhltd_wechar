@@ -10,8 +10,8 @@
  justify-content: center; 
 }
 .lianxiwomen-image{
-   width: 500rpx;
-  height: 450rpx;
+   width: 100%;
+  height: 600rpx;
 }
 .xiantiao{
  flex-direction:row;

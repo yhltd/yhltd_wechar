@@ -58,5 +58,9 @@ height:375rpx;
 .zixun-image{
   width: 300rpx;
   height: 250rpx;
+  float: left
 }
-
+.lianxiwomen-image{
+   width: 65%;
+  height: 400rpx;
+}

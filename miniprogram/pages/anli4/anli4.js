@@ -1,33 +1,10 @@
-// pages/jiaruwomen/jiaruwomen.js
+// pages/anli4/anli4.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    items: [
-      {
-        name: "16619776280",
-         src : '/pages/images/dianhua.png',
-      },
-      {
-        name: "512250428@qq.com",
-         src : '/pages/images/youxiang.png',
-      },
-      {
-        name: "BQWL07910",
-        src:'/pages/images/weixin.png',
-      },
-      {
-        name: "512250428",
-        src:'/pages/images/QQ.png',
-      },
-      {
-        name: "大连市高新园区设计城A座1204室",
-        src:'/pages/images/dizhi.png',
-      }
-      
-      ]
 
   },
 

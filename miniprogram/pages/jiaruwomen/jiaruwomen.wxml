@@ -1,15 +1,26 @@
-<!--pages/jiaruwomen/jiaruwomen.wxml-->
-
-<view class='lianxiwomen'>
-
-<view><image class='lianxi' src='/pages/images/dianhua.png'></image>   16619776280 </view>
-
-<view><image class='lianxi' src='/pages/images/youxiang.png'></image>512250428@qq.com </view>
-
-<view><image class='lianxi' src='/pages/images/weixin.png'></image>BQWL07910 </view>
-
-<view><image class='lianxi' src='/pages/images/QQ.png'></image>512250428 </view>
-
-<view><image class='lianxi' src='/pages/images/dizhi.png'></image>大连市高新园区爱贤街10号设计城A座1204室 </view>
+<view class="lianxi-women">
+    <image class='lianxiwomen-image'  src='/pages/images/xiaochengxukaifa.png'> </image>
 </view>
 
+<view class="container">
+  <view class="divLine">
+  </view>
+</view>
+
+   <view>
+     <block wx:for="{{items}}"  wx:key="">
+       <view class="lianxiwomen">
+       <view>
+          <view class='lianxi-image' >
+           <image src="{{item.src}}" class="lianxi">
+           </image>
+           </view>
+           {{item.name}}
+           </view>
+           <view class="container">
+  <view class="divLine">
+  </view>
+</view>
+       </view>
+      </block>
+    </view>

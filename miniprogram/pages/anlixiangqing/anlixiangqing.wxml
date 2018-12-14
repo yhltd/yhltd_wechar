@@ -2,9 +2,16 @@
 <block wx:for="{{anlizhanshi}}" wx:key="">
      <block wx:for="{{item}}" wx:key="">
       <view class="anlizhanshi2">
+       <navigator url="{{item.url}}"> 
         <image src="{{item.src}}" 
         class="anli-image"></image>
+         </navigator>
         <view class="anli-text">{{item.name}}</view>
+          
       </view>
+      <view class="container">
+  <view class="divLine">
+  </view>
+</view>
       </block>
      </block>

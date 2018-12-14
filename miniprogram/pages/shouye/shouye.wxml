@@ -1,12 +1,17 @@
 
 <!--pages/shouye/shouye.wxml-->
 <view class="swiper-yangshi">
+
  <swiper class="post-swiper" indicator-dots='true' autoplay='true' interval='5000'>
    <swiper-item>
+    <navigator url="/pages/huakuai1/huakuai1">
     <image src="/pages/images/11.png" class='post-swiper-img'></image>
+    </navigator>
    </swiper-item>
    <swiper-item>
+<navigator url="/pages/huakuai2/huakuai2">
     <image src="/pages/images/22.png" class='post-swiper-img'></image>
+</navigator>
    </swiper-item>
   </swiper>
 </view>
@@ -36,8 +41,12 @@
   <view class="divLine"></view>
 </view>
     <block>
+    <navigator url="/pages/zhuti1/zhuti1"> 
         <image src="/pages/images/gongsi1.png" class='gongsi-img'></image>
+       </navigator> 
+       <navigator url="/pages/zhuti2/zhuti2"> 
         <image src="/pages/images/gongsi2.png" class='gongsi-img'></image>
+        </navigator> 
         </block>
     <view class="container">
      <!-- 分割线 -->
@@ -55,9 +64,11 @@
 <block wx:for="{{anlizhanshi}}" wx:key="">
      <block wx:for="{{item}}" wx:key="">
       <view class="anlizhanshi1">
+      <navigator url="{{item.url}}"> 
         <image src="{{item.src}}" 
         class="anlitupian"></image>
         <view class="category-text">{{item.name}}</view>
+        </navigator>
       </view>
       </block>
      </block>
@@ -76,14 +87,13 @@
 
 
 
-<block class="zixun">
- <view > 
+<view class="zixun">
+ <navigator url="/pages/xiaochengxu/xiaochengxu"> 
   <image class="zixun-image" src="/pages/images/xiaochengxuzixun.png" >
  </image>
+  </navigator> 
  <view class="zixun-text">什么是小程序？</view>
- </view>
-  
-</block>
+</view>
 
 <view class="container">
      <!-- 分割线 -->

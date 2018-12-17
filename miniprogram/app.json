@@ -23,21 +23,26 @@
     "pages/anli2/anli2",
     "pages/anli3/anli3",
     "pages/anli4/anli4",
-    "pages/xiaochengxu/xiaochengxu"
-
+    "pages/xiaochengxu/xiaochengxu",
+    "pages/chanpin1/chanpin1",
+    "pages/chanpin2/chanpin2",
+    "pages/chanpin3/chanpin3",
+    "pages/chanpin4/chanpin4",
+    "pages/kefu/kefu",
+    "pages/gouwuche/gouwuche",
+    "pages/jiaru/jiaru",
+    "pages/goumai/goumai"
   ],
- 
-  
   "window": {
     "background-Color": "#ffffff",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff0000",
     "navigationBarTitleText": "云合未来",
     "navigationBarTextStyle": "light"
-  },
+  }
+  ,
   "tabBar": {
-    "color": "#dddddd",
-    "borderStyle": "white",
+    "color": "#a9b7b7",
     "selectedColor": "#1afa29",
     "backgroundColor": "#ffffff",
     "list": [
@@ -62,6 +67,7 @@
         "text": "用户"
       }
     ]
+     
   }
  
 }

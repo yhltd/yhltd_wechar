@@ -1,2 +1,61 @@
-<!--pages/chanpin/chanpin.wxml-->
-<text>pages/chanpin/chanpin.wxml</text>
+<view class='biaoti'>云合产品</view>
+
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+
+<view class='chanpin'>
+<image  class="chanpin-image" src='/pages/images/chanpin1.jpg'></image>
+<navigator url="/pages/chanpin1/chanpin1">
+<view  class='jinru'>
+<view class='jinru-text'>进去看看</view>
+<image src='/pages/images/jinru.png' class='jinru-image'></image>
+</view>
+</navigator>
+</view>
+
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+
+<view class='chanpin'>
+<image class="chanpin-image" src='/pages/images/chanpin2.jpg'></image>
+<navigator url="/pages/chanpin2/chanpin2">
+<view class='jinru'>
+<view class='jinru-text'>进去看看</view>
+<image  src='/pages/images/jinru.png' class='jinru-image'></image>
+</view>
+</navigator>
+</view>
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+<view class='chanpin'>
+<image class="chanpin-image" src='/pages/images/chanpin3.jpg'></image>
+<navigator url="/pages/chanpin3/chanpin3">
+<view class='jinru'>
+<view class='jinru-text'>进去看看</view>
+<image src='/pages/images/jinru.png' class='jinru-image'></image>
+</view>
+</navigator>
+</view>
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>
+<view class='chanpin'>
+<image class="chanpin-image" src='/pages/images/chanpin4.jpg'></image>
+<navigator url="/pages/chanpin4/chanpin4">
+<view class='jinru'>
+<view class='jinru-text'>进去看看</view>
+<image  src='/pages/images/jinru.png' class='jinru-image'></image>
+</view>
+</navigator>
+</view>
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+</view>

@@ -1,3 +1,7 @@
+<import src="/pages/template/tabbar.wxml"/> 
+ <template is="tabBar" data="{{tabBar}}"/>
+ 
+
 
 <!--pages/shouye/shouye.wxml-->
 <view class="swiper-yangshi">

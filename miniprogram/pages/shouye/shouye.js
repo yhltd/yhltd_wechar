@@ -57,5 +57,14 @@ Page({
 
   ,
 
+  // onShow: function () {
+  //   app.editTabBar();    //显示自定义的底部导航
+  // },
+  
+  onLoad: function () {
+
+  }
+
+
   
 })

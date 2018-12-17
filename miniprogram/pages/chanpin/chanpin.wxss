@@ -1,1 +1,36 @@
 /* pages/chanpin/chanpin.wxss */
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height:5rpx;
+}
+.chanpin{
+  display: flex;
+  height: 440rpx;
+  flex-wrap: wrap
+}
+.chanpin-image{
+  
+  height: 350rpx;
+  margin: 20rpx 20rpx 5rpx 20rpx ;
+ 
+}
+.jinru{
+  margin: 0rpx 0rpx 0rpx 500rpx;
+  display: flex;
+  flex-wrap: wrap
+
+}
+.jinru-image{
+  width: 50rpx;
+  height: 50rpx;
+   
+}
+.biaoti{
+  text-align: center;
+  font-size: 20px
+}
+.jinru-text{
+  color: #a39c9c;
+  font-size: 14px
+}

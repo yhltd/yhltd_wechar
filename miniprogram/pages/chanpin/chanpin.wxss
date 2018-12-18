@@ -6,13 +6,13 @@
 }
 .chanpin{
   display: flex;
-  height: 440rpx;
+  height: 680rpx;
   flex-wrap: wrap
 }
 .chanpin-image{
   
-  height: 350rpx;
-  margin: 20rpx 20rpx 5rpx 20rpx ;
+  height: 600rpx;
+  margin: 20rpx 20rpx 0rpx 20rpx ;
  
 }
 .jinru{

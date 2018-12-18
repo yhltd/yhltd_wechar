@@ -107,8 +107,8 @@ App({
     //第二种底部导航栏显示
     tabBar1: {
       "color": "#4F4F4F",
-      "backgroundColor": "#fff",
-      "borderStyle": "#ccc",
+     
+      "selectedColor" :"#ffffff",
       "list": [
         {
           "pagePath": "/pages/kefu/kefu",
@@ -119,21 +119,23 @@ App({
         },
         {
           "pagePath": "/pages/gouwuche/gouwuche",
-          "text": "购物车",
+          "text": "收藏",
           "iconPath": "/images/gouwuche.png",
           "clas": "menu-item1",
           active: true
         },
         {
           "pagePath": "/pages/jiaru/jiaru",
-          "text": "加入购物车",
-          "clas": "menu-item2",
+          "text2": "加入收藏",
+          "clas": "menu-item3",
+          "selectedColor": "#FF5E00",
           active: false
         },
         {
           "pagePath": "/pages/goumai/goumai",
-          "text": "立即购买",
-          "clas": "menu-item3",
+          "text2": "立即购买",
+          "clas": "menu-item4",
+          "selectedColor": "#F80000",
           active: false
         }
       ],

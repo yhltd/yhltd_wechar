@@ -1,17 +1,17 @@
 <!--pages/chanpin1/chanpin1.wxml-->
 <view class='chanpinimageda'>
-<image class="chanpin-imageda" src='/pages/images/chanpin1.jpg'></image>
+<image class="chanpin-imageda" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/chanpin1.jpg'></image>
 </view>
 <import src="/pages/template/tabbar.wxml"/> 
  <template is="tabBar" data="{{tabBar}}"/>
 
  <view class='chanpin1-1'> 
 
-  <image class='tuijian' src='/pages/images/tuijian.png'></image>
+  <image class='tuijian' src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/tuijian.png'></image>
   <view>超低价软件定制，财务系统，ERP系统，订单管理系统，协同自动化系统</view>
   </view>
    <view class='chanpin1-2' >
-   <image class="qian" src="/pages/images/qian.png"></image> 
+   <image class="qian" src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/qian.png"></image> 
   <view class='qian-text1'> 20000 </view>
   <view class="qian-text2">.99</view>
   </view>
@@ -26,7 +26,7 @@
 <view class='chanpin1-text1'>更安全、更可靠</view>
 <view class='chanpin1-text2'>面向行业客户，帮助您实现信息化管理最佳实践，以满足您业务快速发展的不同需求。</view>
 <view class='image2-height'>
-<image class="chanpin-image2" src='/pages/images/640.jpg'></image>
+<image class="chanpin-image2" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/640.jpg'></image>
 </view>
 
  <view class='chanpin1-text3'>

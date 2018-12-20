@@ -8,25 +8,29 @@ Page({
     items: [
       {
         name: "16619776280",
-         src : '/pages/images/dianhua.png',
+        src: 'cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/dianhua.png',
+        
       },
       {
         name: "512250428@qq.com",
-         src : '/pages/images/youxiang.png',
+         src : 'cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/youxiang.png',
+        
       },
       {
         name: "BQWL07910",
-        src:'/pages/images/weixin.png',
+        src:'cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/weixin.png',
+        
       },
       {
         name: "512250428",
-        src:'/pages/images/QQ.png',
+        src:'cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/QQ.png',
+        url:"/pages/dakaiQQ/dakaiQQ"
       },
       {
         name: "大连市高新园区设计城A座1204室",
-        src:'/pages/images/dizhi.png',
+        src:'cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/dizhi.png',
+        
       }
-      
       ]
 
   },

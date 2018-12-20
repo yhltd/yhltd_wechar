@@ -1,2 +1,12 @@
 <!--pages/yonghu/yonghu.wxml-->
 <text>pages/yonghu/yonghu.wxml</text>
+ <view class='box'>
+  <form bindsubmit='searchBox'>
+   <button  form-type='submit'>read</button>
+     </form>
+       <view bindtap="xinjianyonghu">读取 </view>
+        <view bindtap="xieru">写入 </view>
+       <view bindtap="updatecase">更改 </view>
+         <view bindtap="de">删除 </view>
+     </view>
+     <view bindtap='xinjian'>新建</view>

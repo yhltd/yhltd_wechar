@@ -4,27 +4,28 @@
  width: 100%;
  height:5rpx;
 }
-.chanpin{
+.chanpin0{
   display: flex;
   height: 680rpx;
-  flex-wrap: wrap
-}
-.chanpin-image{
-  
-  height: 600rpx;
+  flex-direction:  column;
   margin: 20rpx 20rpx 0rpx 20rpx ;
- 
+  width: 100%
+  
+}
+.chanpin0-image{
+  height: 600rpx;
+   width: 710rpx
 }
 .jinru{
-  margin: 0rpx 0rpx 0rpx 500rpx;
-  display: flex;
-  flex-wrap: wrap
-
+   display: flex;
+ float: right;
+  margin: 0rpx 40rpx 0rpx 0rpx ;
+ 
 }
 .jinru-image{
   width: 50rpx;
   height: 50rpx;
-   
+ 
 }
 .biaoti{
   text-align: center;
@@ -32,5 +33,6 @@
 }
 .jinru-text{
   color: #a39c9c;
-  font-size: 14px
+  font-size: 14px;
+
 }

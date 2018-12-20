@@ -9,22 +9,22 @@ Page({
       pageone: [
         {
           name: "软件开发",
-          src: "/pages/images/ruanjian.png",
+          src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/ruanjian.png",
           url:"/pages/anli1/anli1"
         },
         {
           name: "网站建设",
-          src: "/pages/images/wangzhan.png",
+          src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/wangzhan.png",
           url: "/pages/anli2/anli2"
         },
         {
           name: "小程序",
-          src: "/pages/images/xiaochengxu.png",
+          src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xiaochengxu.png",
           url: "/pages/anli3/anli3"
         },
         {
           name: "手机APP",
-          src: "/pages/images/shouji.png",
+          src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/shouji.png",
           url: "/pages/anli4/anli4"
         }
       ]

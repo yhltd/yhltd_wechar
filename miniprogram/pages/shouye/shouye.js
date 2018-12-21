@@ -2,7 +2,7 @@ var app=getApp()
 Page({
 
   data: {
-    // categoryList: {
+    
       items: [
         {
         name: "公司简介",
@@ -25,7 +25,7 @@ Page({
           url: "/pages/jiaruwomen/jiaruwomen",
         }
       ]
-      // }
+       
       ,
     anlizhanshi: {
       pageone: [

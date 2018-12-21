@@ -10,3 +10,15 @@
          <view bindtap="de">删除 </view>
      </view>
      <view bindtap='xinjian'>新建</view>
+
+  <view bindtap='xinxi'>
+  信息<view>语言：{{language}}</view>
+  <view>昵称：{{nickName}}</view>
+  <view>url：{{avatarUrl}}</view>
+  <view >性别：{{gender}}</view>
+  <view>省份：{{province}}</view>
+  <view>城市：{{city}}</view>
+  <view>国家:{{country}}</view>
+  </view>
+<button bindtap='shouquan'>登录</button>
+     

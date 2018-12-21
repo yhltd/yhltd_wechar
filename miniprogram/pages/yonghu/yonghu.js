@@ -1,24 +1,61 @@
-// pages/yonghu/yonghu.js
-
+var app = getApp();
 Page({
-  
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    language:"",
+    nickName: "",
+    avatarUrl:"",
+    gender:"",
+    province:"",
+    city:"",
+    country:"" 
   },
-
+shouquan:function(){
+  wx.navigateTo({
+    url: '/pages/shouquan/shouquan',
+  })
+  //  wx.getUserInfo({
+  //           success(res) {
+  //             const userInfo = res.userInfo
+  //             const nickName = userInfo.nickName
+  //             const avatarUrl = userInfo.avatarUrl
+  //             const gender = userInfo.gender // 性别 0：未知、1：男、2：女
+  //             const province = userInfo.province
+  //             const city = userInfo.city
+  //             const country = userInfo.country
+           
+  //           },
+            
+  //         })
+  
+}
+,
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  xinxi:function() {
+    var that=this;
+    if (app.globalData.gender = 1) {
+      app.globalData.gender = '男'
+    } else if (app.globalData.gender = 2) {
+      app.globalData.gender = '女'
+    } else {
+      app.globalData.gender = '未知'
+    }
+    this.setData({
+      language: app.globalData.language,
+      nickName: app.globalData.nickName,
+      avatarUrl: app.globalData.avatarUrl,
+      gender: app.globalData.gender,
+      province:  app.globalData.province,
+      city:app.globalData.city,
+      country:app.globalData.country,
+      
+    })
+  }
+,
+  
 
-  },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
 
   },
@@ -98,7 +135,7 @@ Page({
       },
       success: res => {
         console.log(res);
-     
+        console.log(app.globalData.nickName)
         wx.showToast({
           title: '修改成功',
         })

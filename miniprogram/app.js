@@ -47,6 +47,7 @@ App({
     });
   },
   globalData: {
+    nickName:"",
     //第一种底部导航栏显示
     // tabBar: {
     //   "color": "#dddddd",

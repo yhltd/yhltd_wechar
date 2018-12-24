@@ -8,12 +8,12 @@
  <view class='chanpin1-1'> 
 
   <image class='tuijian' src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/tuijian.png'></image>
-  <view>超低价软件定制，财务系统，ERP系统，订单管理系统，协同自动化系统</view>
+  <view>{{chanpinming}}</view>
   </view>
    <view class='chanpin1-2' >
    <image class="qian" src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/qian.png"></image> 
-  <view class='qian-text1'> 20000 </view>
-  <view class="qian-text2">.99</view>
+  <view class='qian-text1'> {{jiagezheng}}</view>
+  <view class="qian-text2">.{{jiagexiao}}</view>
   </view>
 
 
@@ -23,20 +23,20 @@
 </view>
 
 <view class='chanpin-kong1'> </view>
-<view class='chanpin1-text1'>创新，可用，互动</view>
-<view class='chanpin1-text2'>App在现代生活中起着至关重要的作用,既是商业工具,又有娱乐特质。</view>
+<view class='chanpin1-text1'>{{text1}}</view>
+<view class='chanpin1-text2'>{{text2}}</view>
 <view class='image2-height'>
 <image class="chanpin-image2" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/appkaifa.jpg'></image>
 </view>
 
  <view class='chanpin1-text3'>
- <view >特点：</view>
- <view>1.数据完全掌握在自己手中,还可以直接向客户推送消息、发送短信等，优势非常明显</view>
-<view>2.功能强大,App的功能则可以自由选择进行开发</view>
-<view>3.访问速度快,只有在需要访问数据库服务器的时候才通过网络对外交互</view>
-<view>4.用户体验佳,App可以根据用户的使用习惯进行更加个性化的设置</view>
-<view>5.可以缓存资源,可以缓存资源，比如新闻、图片、小说、视频、音频等</view>
-<view>6.使用路径更短,手机App就在用户的手机桌面上，用户天天都能看到，打开就能直接使用</view>
+ <view >{{text3}}</view>
+ <view>{{text4}}</view>
+<view>{{text5}}</view>
+<view>{{text6}}</view>
+<view>{{text7}}</view>
+<view>{{text8}}</view>
+<view>{{text9}}</view>
 </view>
 
 

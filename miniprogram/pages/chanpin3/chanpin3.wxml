@@ -8,12 +8,12 @@
  <view class='chanpin1-1'> 
 
   <image class='tuijian' src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/tuijian.png'></image>
-  <view>量身定制微信小程序，公众号</view>
+  <view>{{chanpinming}}</view>
   </view>
    <view class='chanpin1-2' >
    <image class="qian" src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/qian.png"></image> 
-  <view class='qian-text1'> 199 </view>
-  <view class="qian-text2">.99</view>
+  <view class='qian-text1'> {{jiagezheng}} </view>
+  <view class="qian-text2">.{{jiagexiao}}</view>
   </view>
 
 
@@ -23,20 +23,20 @@
 </view>
 
 <view class='chanpin-kong1'> </view>
-<view class='chanpin1-text1'>无需安装，触手可及</view>
-<view class='chanpin1-text2'>小程序是一款无需下载安装即可使用的应用，用户不必为安装应用程序太多而担心</view>
+<view class='chanpin1-text1'>{{text1}}</view>
+<view class='chanpin1-text2'>{{text2}}</view>
 <view class='image2-height'>
 <image class="chanpin-image2" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/chanpin3.jpg'></image>
 </view>
 
  <view class='chanpin1-text3'>
- <view >特点：</view>
- <view>1.自带流量，直接对接微信的9.3亿用户</view>
-<view>2.无需下载，解放手机空间内存，不占桌面</view>
-<view>3.精准定位，精准推送，精准服务</view>
-<view>4.便捷获取服务，多种入口，使用路径短</view>
-<view>5.兼容各种手机，兼容安卓，ISO系统</view>
-<view>6.费用低，费用仅是APP的十分之一</view>
+ <view >{{text3}}</view>
+ <view>{{text4}}</view>
+<view>{{text5}}</view>
+<view>{{text6}}</view>
+<view>{{text7}}</view>
+<view>{{text8}}</view>
+<view>{{text9}}</view>
 </view>
 
 

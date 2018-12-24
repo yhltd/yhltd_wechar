@@ -1,9 +1,7 @@
 //app.js
 App({
   
-  // onLaunch: function () {
-
-  // },
+  
 
   //第一种底部  
   editTabBar: function () {
@@ -47,7 +45,14 @@ App({
     });
   },
   globalData: {
+   
     nickName:"",
+    gender: "",
+    avatarUrl: "",
+    province: "",
+    city: "",
+    country: "",
+    language: "",
     //第一种底部导航栏显示
     // tabBar: {
     //   "color": "#dddddd",
@@ -133,6 +138,7 @@ App({
     }
 
   },
+  
  onLaunch: function () {
 
     if (!wx.cloud) {
@@ -142,6 +148,8 @@ App({
         traceUser: true,
       })
     }
-
+   
+  
   },
+  
 })

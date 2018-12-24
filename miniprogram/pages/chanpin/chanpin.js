@@ -12,7 +12,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const db = wx.cloud.database();
+    db.collection('todos').doc('XCBDTnffS3SWOCjG').get({
+      success(res) {
+        app.globalData.chanpinming = res.data.chanpinming;
+        console.log(app.globalData.chanpinming)
+      }
+    })
   },
 
   /**

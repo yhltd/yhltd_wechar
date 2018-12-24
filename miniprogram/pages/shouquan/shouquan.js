@@ -22,25 +22,27 @@ Page({
               console.log(res.userInfo)
             }
           })
+          
           wx.getUserInfo({
             success(res) {
               const userInfo = res.userInfo
-              const language = userInfo.language
-              const nickName = userInfo.nickName
-              const avatarUrl = userInfo.avatarUrl
-              const gender = userInfo.gender // 性别 0：未知、1：男、2：女
-              const province = userInfo.province
-              const city = userInfo.city
-              const country = userInfo.country
-              app.globalData.userInfo = userInfo
-              app.globalData.nickName = nickName
-              app.globalData.avatarUrl = avatarUrl
+              app.globalData.language = userInfo.language
+              app.globalData.nickName = userInfo.nickName
+              app.globalData.avatarUrl = userInfo.avatarUrl
+              app.globalData.gender = userInfo.gender // 性别 0：未知、1：男、2：女
              
-              app.globalData.gender = gender
-              app.globalData.province = province
-              app.globalData.city = city
-              app.globalData.language = language
-              app.globalData.country = country
+              app.globalData.province = userInfo.province
+              app.globalData.city = userInfo.city
+              app.globalData.country = userInfo.country
+              app.globalData.userInfo = userInfo;
+              
+               if (app.globalData.gender = 1) {
+                app.globalData.gender = '男'
+              } else if (app.globalData.gender = 2) {
+                app.globalData.gender = '女'
+              } else {
+                app.globalData.gender = ''
+              }
 
             }
           })

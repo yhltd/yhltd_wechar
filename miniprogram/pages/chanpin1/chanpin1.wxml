@@ -8,12 +8,12 @@
  <view class='chanpin1-1'> 
 
   <image class='tuijian' src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/tuijian.png'></image>
-  <view>超低价软件定制，财务系统，ERP系统，订单管理系统，协同自动化系统</view>
+  <view >{{chanpinming}}</view>
   </view>
    <view class='chanpin1-2' >
    <image class="qian" src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/qian.png"></image> 
-  <view class='qian-text1'> 20000 </view>
-  <view class="qian-text2">.99</view>
+  <view class='qian-text1'> {{jiagezheng}} </view>
+  <view class="qian-text2">.{{jiagexiao}}</view>
   </view>
 
 
@@ -23,20 +23,20 @@
 </view>
 
 <view class='chanpin-kong1'> </view>
-<view class='chanpin1-text1'>更安全、更可靠</view>
-<view class='chanpin1-text2'>面向行业客户，帮助您实现信息化管理最佳实践，以满足您业务快速发展的不同需求。</view>
+<view class='chanpin1-text1'>{{text1}}</view>
+<view class='chanpin1-text2'>{{text2}}</view>
 <view class='image2-height'>
 <image class="chanpin-image2" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/640.jpg'></image>
 </view>
 
  <view class='chanpin1-text3'>
- <view >特点：</view>
- <view>1.统一的信息发布平台,消除信息混乱</view>
-<view>2.突破工作沟通,交流障碍，沟通、交流快捷有效</view>
-<view>3.打破信息孤岛，实现知识、经验的随时积累、充分利用</view>
-<view>4.实现跨部门协同工作，提升工作效率，加强业务规范</view>
-<view>5.提高内部资源利用率，降低办公与企业运营成本</view>
-<view>6.全面的备份回复,保证数据的完整性，安全性</view>
+ <view >{{text3}}</view>
+ <view>{{text4}}</view>
+<view>{{text5}}</view>
+<view>{{text6}}</view>
+<view>{{text7}}</view>
+<view>{{text8}}</view>
+<view>{{text9}}</view>
 </view>
 
 

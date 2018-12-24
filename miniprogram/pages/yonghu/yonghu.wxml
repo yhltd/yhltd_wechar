@@ -11,7 +11,7 @@
      </view>
      <view bindtap='xinjian'>新建</view>
 
-  <view bindtap='xinxi'>
+  <view >
   信息<view>语言：{{language}}</view>
   <view>昵称：{{nickName}}</view>
   <view>url：{{avatarUrl}}</view>

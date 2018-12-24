@@ -32,15 +32,8 @@ shouquan:function(){
   /**
    * 生命周期函数--监听页面加载
    */
-  xinxi:function() {
+  onShow:function() {
     var that=this;
-    if (app.globalData.gender = 1) {
-      app.globalData.gender = '男'
-    } else if (app.globalData.gender = 2) {
-      app.globalData.gender = '女'
-    } else {
-      app.globalData.gender = '未知'
-    }
     this.setData({
       language: app.globalData.language,
       nickName: app.globalData.nickName,
@@ -63,9 +56,7 @@ shouquan:function(){
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-
-  },
+ 
 
   /**
    * 生命周期函数--监听页面隐藏

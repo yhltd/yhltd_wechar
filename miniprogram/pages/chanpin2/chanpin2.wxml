@@ -8,12 +8,12 @@
  <view class='chanpin1-1'> 
 
   <image class='tuijian' src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/tuijian.png'></image>
-  <view>高端的网站建设,企业型网站建设,营销型网站建设,电商平台建设</view>
+  <view>{{chanpinming}}</view>
   </view>
    <view class='chanpin1-2' >
    <image class="qian" src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/qian.png"></image> 
-  <view class='qian-text1'> 20000 </view>
-  <view class="qian-text2">.99</view>
+  <view class='qian-text1'>{{jiagezheng}}</view>
+  <view class="qian-text2">.{{jiagexiao}}</view>
   </view>
 
 
@@ -23,22 +23,22 @@
 </view>
 
 <view class='chanpin-kong1'> </view>
-<view class='chanpin1-text1'>营销型网站设计</view>
-<view class='chanpin1-text2'>帮助客户推广自己的产品，服务和帮助，傻瓜式管理，操作方便快捷。</view>
+<view class='chanpin1-text1'>{{text1}}</view>
+<view class='chanpin1-text2'>{{text2}}</view>
 <view class='image2-height'>
 <image class="chanpin-image2" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/chanpin2.jpg'></image>
 </view>
 
  <view class='chanpin1-text3'>
- <view >特点：</view>
- <view>1.有利于提升企业形象</view>
-<view>2.使公司具有网络沟通能力</view>
-<view>3.可以全面详细地介绍公司及公司产品</view>
-<view>4.实现电子商务功能</view>
-<view>5.可以与客户保持密切联系</view>
-<view>6.可以与潜在客户建立商业联系</view>
-<view>7.可以降低通信费用</view>
-<view>8.可以利用网站及时得到客户的反馈信息</view>
+ <view >{{text3}}</view>
+ <view>{{text4}}</view>
+<view>{{text5}}</view>
+<view>{{text6}}</view>
+<view>{{text7}}</view>
+<view>{{text8}}</view>
+<view>{{text9}}</view>
+<view>{{text10}}</view>
+<view>{{text11}}</view>
 </view>
 
 

@@ -1,4 +1,4 @@
-// pages/chanpin3/chanpin3.js
+
 var app = getApp();
 Page({
 
@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    chanpinming: ""
+   
 
   },
 
@@ -18,20 +18,11 @@ Page({
     db.collection('todos').doc('XCCC2sDR1TiNEP9l').get({
       success(res) {
         that.setData({
-          chanpinming: res.data.chanpinming,
-          jiagexiao: res.data.jiagexiao,
-          jiagezheng: res.data.jiagezheng,
-          text1: res.data.text1,
-          text2: res.data.text2,
-          text3: res.data.text3,
-          text4: res.data.text4,
-          text5: res.data.text5,
-          text6: res.data.text6,
-          text7: res.data.text7,
-          text8: res.data.text8,
-          text9: res.data.text9,
+          all: res.data
           
         })
+        wx.setStorageSync('id', res.data._id),
+          console.log(res.data._id)
       }
 
     })

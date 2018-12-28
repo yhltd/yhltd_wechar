@@ -30,7 +30,7 @@ Page({
               app.globalData.nickName = userInfo.nickName
               app.globalData.avatarUrl = userInfo.avatarUrl
               app.globalData.gender = userInfo.gender // 性别 0：未知、1：男、2：女
-             
+              app.globalData.openid = userInfo.openid
               app.globalData.province = userInfo.province
               app.globalData.city = userInfo.city
               app.globalData.country = userInfo.country

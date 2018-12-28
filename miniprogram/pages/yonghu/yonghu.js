@@ -1,6 +1,7 @@
 var app = getApp();
 Page({
   data: {
+   
     language:"",
     nickName: "",
     avatarUrl:"",
@@ -13,22 +14,14 @@ shouquan:function(){
   wx.navigateTo({
     url: '/pages/shouquan/shouquan',
   })
-  //  wx.getUserInfo({
-  //           success(res) {
-  //             const userInfo = res.userInfo
-  //             const nickName = userInfo.nickName
-  //             const avatarUrl = userInfo.avatarUrl
-  //             const gender = userInfo.gender // 性别 0：未知、1：男、2：女
-  //             const province = userInfo.province
-  //             const city = userInfo.city
-  //             const country = userInfo.country
-           
-  //           },
-            
-  //         })
-  
-}
-,
+},
+
+  onload: function () { 
+   
+    
+  },
+
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -44,6 +37,7 @@ shouquan:function(){
       country:app.globalData.country,
       
     })
+  
   }
 ,
   
@@ -120,9 +114,10 @@ shouquan:function(){
   },
   updatecase: function () {
     const db = wx.cloud.database();
-    db.collection('todos').doc('XBn3u3kPDdDCJ2ld').update({
+    db.collection('todos').doc('XCLo95T75u22xUVG').update({
       data: {
-        age: '650'
+        agee: "650",
+
       },
       success: res => {
         console.log(res);
@@ -157,7 +152,7 @@ shouquan:function(){
   xinjian:function(){
     const db = wx.cloud.database();
 
-    db.collection('todos').add({
+    db.collection('shoucang').add({
       data: {
         age: 100
       },

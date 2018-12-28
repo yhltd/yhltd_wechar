@@ -1,4 +1,7 @@
 <!--pages/chanpin1/chanpin1.wxml-->
+<button bindtap='xieru'>获取用户唯一标识openid</button>  
+
+
 <view class='chanpinimageda'>
 <image class="chanpin-imageda" src='{{all.image1}}'></image>
 </view>
@@ -26,7 +29,11 @@
 <view class='chanpin1-text1'>{{all.text1}}</view>
 <view class='chanpin1-text2'>{{all.text2}}</view>
 <view class='image2-height'>
+
 <image class="chanpin-image2" src='{{all.image4}}'></image>
+<image class="chanpin-image3" src='{{all.image5}}'></image>
+<image class="chanpin-image3" src='{{all.image6}}'></image>
+<image class="chanpin-image3" src='{{all.image7}}'></image>
 </view>
 
  <view class='chanpin1-text3'>
@@ -38,5 +45,4 @@
 <view>{{all.text8}}</view>
 <view>{{all.text9}}</view>
 </view>
-
 

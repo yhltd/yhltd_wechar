@@ -1,2 +1,8 @@
 <!--pages/anli1/anli1.wxml-->
 <text>软件定制</text>
+<!-- <import src="/pages/template/chanpinye.wxml"/> 
+
+ <template is="chanpinye" data="{{all}}"/> -->
+
+<image src='{{id[0].image1}}'></image>
+<text>{{image}}</text>

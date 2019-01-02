@@ -19,9 +19,12 @@ Page({
          wx.request({
            url: 'https://test.com/onLogin',
            data: {
-             code: res.code
-           }          
+             code: res.code,
+           
+           }     
+                 
          })
+         console.log(res.code)
        } else {
          console.log('登录失败！' + res.errMsg)
        }

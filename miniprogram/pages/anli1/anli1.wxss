@@ -1,1 +1,39 @@
 /* pages/anli1/anli1.wxss */
+/* pages/chanpin/chanpin.wxss */
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height:5rpx;
+}
+.chanpin0{
+  display: flex;
+  height: 680rpx;
+  flex-direction:  column;
+  margin: 20rpx 20rpx 0rpx 20rpx ;
+  width: 100%
+  
+}
+.chanpin0-image{
+  height: 600rpx;
+   width: 710rpx
+}
+.jinru{
+   display: flex;
+ float: right;
+  margin: 0rpx 40rpx 0rpx 0rpx ;
+ 
+}
+.jinru-image{
+  width: 50rpx;
+  height: 50rpx;
+ 
+}
+.biaoti{
+  text-align: center;
+  font-size: 20px
+}
+.jinru-text{
+  color: #a39c9c;
+  font-size: 14px;
+
+}

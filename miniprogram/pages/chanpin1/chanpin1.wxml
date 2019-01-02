@@ -1,7 +1,4 @@
 <!--pages/chanpin1/chanpin1.wxml-->
-<button bindtap='xieru'>获取用户唯一标识openid</button>  
-
-
 <view class='chanpinimageda'>
 <image class="chanpin-imageda" src='{{all.image1}}'></image>
 </view>

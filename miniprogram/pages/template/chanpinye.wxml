@@ -1,0 +1,16 @@
+<template name="chanpinye"> 
+
+<!-- <block wx:for="{{all}}"> -->
+<view class="container">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+
+  <image  class="chanpin0-image" src='{{all.image1}}'></image>
+
+</view>
+<view  class='jinru'>
+<view class='jinru-text'>进去看看</view>
+<image src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/jinru.png' class='jinru-image'></image>
+</view>
+<!-- </block> -->
+</template> 

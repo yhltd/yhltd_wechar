@@ -1,4 +1,5 @@
 // pages/anli1/anli1.js
+var app = getApp();
 Page({
 
   /**
@@ -26,7 +27,22 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var that = this;
+    var id;
+    app.editTabBar1();
+    const db = wx.cloud.database();
+    db.collection('todos').get({
+      success(res) {
+        that.setData({
+          all: res.data
+        })
+       
+        id = res.data
+        image = id[0].image1
+        wx.setStorageSync('id', res.data),
+          console.log(id[0].image1)
+      }
+    })
   },
 
   /**

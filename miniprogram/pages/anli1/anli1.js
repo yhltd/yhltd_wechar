@@ -28,55 +28,34 @@ Page({
    */
   onShow: function () {
     var that = this;
-    var id;
-    app.editTabBar1();
+    var all=[];
+    // app.editTabBar1();
     const db = wx.cloud.database();
+    var countResult = 12;
+    console.log(countResult);
+
     db.collection('todos').get({
       success(res) {
+        all.push(res.data)
         that.setData({
-          all: res.data
-        })
-       
-        id = res.data
-        image = id[0].image1
-        wx.setStorageSync('id', res.data),
-          console.log(id[0].image1)
-      }
-    })
-  },
+          all:all[0] 
+        },
+      
+          // console.log(all),
+          wx.setStorageSync('id', res.data[0]._id)
+ )
+        //循环取值
+        for (let i = 0; i < countResult; i++) {
+          console.log(all[i])
+        }
+      
+ }
+ })
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+ },
+  dange:function(){
 
   }
+ 
 })

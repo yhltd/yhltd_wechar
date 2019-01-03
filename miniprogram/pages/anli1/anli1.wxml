@@ -1,8 +1,12 @@
 <!--pages/anli1/anli1.wxml-->
 <text>软件定制</text>
-<!-- <import src="/pages/template/chanpinye.wxml"/> 
+<import src="/pages/template/chanpinye.wxml"/> 
+ <template is="chanpinye" data="{{all}}"/>
 
- <template is="chanpinye" data="{{all}}"/> -->
 
-<image src='{{id[0].image1}}'></image>
-<text>{{image}}</text>
+
+<!-- <block wx:for="{{id}}" wx:for-index='i' wx:key="">
+
+<image src='{{id[i].image1}}' ></image>
+<text >{{id[i].text1}}</text>
+</block> -->

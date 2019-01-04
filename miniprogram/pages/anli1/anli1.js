@@ -31,7 +31,8 @@ Page({
     var all=[];
     // app.editTabBar1();
     const db = wx.cloud.database();
-
+    var countResult = 12;
+    console.log(countResult);
 
     db.collection('todos').get({
       success(res) {
@@ -43,12 +44,9 @@ Page({
           // console.log(all),
           wx.setStorageSync('id', res.data[0]._id)
  )
-        var countResult = all[0].length;
-        console.log(countResult);
-     
         //循环取值
         for (let i = 0; i < countResult; i++) {
-          console.log(all[0][i]._id)
+          console.log(all[i])
         }
       
  }

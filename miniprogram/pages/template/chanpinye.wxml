@@ -1,20 +1,14 @@
 <template name="chanpinye"> 
-
 <block class="chanpin0" wx:for="{{all}}" wx:for-index='i' wx:key="" >
-
 <view class="container">
      <!-- 分割线 -->
   <view class="divLine"></view>
 </view>
-
- <navigator bindtap='dange' url='/pages/anli2/anli2'>
-
+ <navigator url="/pages/anli2/anli2?id={{all[i]._id}}">
 <image class="chanpin0-image" src='{{all[i].image1}}' ></image>
-
 </navigator>
-
 <text class="chanpin-text">{{all[i].mingzi}}</text>
-<navigator  url='/pages/anli2/anli2'>
+<navigator  url="/pages/anli2/anli2?id={{all[i]._id}}">
 <view  class='jinru'>
 <view class='jinru-text'>进去看看</view>
 <image src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/jinru.png' class='jinru-image'></image>

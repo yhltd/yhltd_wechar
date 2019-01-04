@@ -1,11 +1,11 @@
 var app = getApp();
 Page({
   data: {
-    id: ""
+    
   },
-  onLoad: function () {
+  onLoad: function (options) {
     var that = this;
-    var id = wx.getStorageSync('id');//wx.getStorageSync(key)，获取本地缓存
+    var id =options.id;
     console.log(id)
     const db = wx.cloud.database();
     db.collection('todos').doc(id).get({
@@ -13,15 +13,7 @@ Page({
         that.setData({
           all: res.data
         })
-        // console.log(that.data)
       }
     })
-    // console.log(that.data)
-    that.setData({
-      id: id
-    })
-
   }
-
-  
 })

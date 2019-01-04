@@ -2,60 +2,28 @@
 var app = getApp();
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
+  onLoad: function () {
     var that = this;
     var all=[];
-    // app.editTabBar1();
     const db = wx.cloud.database();
-    var countResult = 12;
-    console.log(countResult);
-
     db.collection('todos').get({
       success(res) {
         all.push(res.data)
         that.setData({
           all:all[0] 
         },
-      
-          // console.log(all),
-          wx.setStorageSync('id', res.data[0]._id)
- )
-        //循环取值
-        for (let i = 0; i < countResult; i++) {
-          console.log(all[i])
-        }
-      
+       ) 
+        //    var countResult = all[0].length;
+        // //循环取值
+        // for (let i = 0; i < countResult; i++) {
+        // // oki
+        // console.log(all[0][i]._id)
+        // }  
  }
  })
-
-
- },
-  dange:function(){
-
-  }
- 
+ }
 })

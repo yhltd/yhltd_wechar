@@ -33,7 +33,8 @@
     "pages/kefu/kefu",
     "pages/gouwuche/gouwuche",
     "pages/jiaru/jiaru",
-    "pages/goumai/goumai"
+    "pages/goumai/goumai",
+    "pages/order/order"
   ],
   "window": {
     "background-Color": "#ffffff",

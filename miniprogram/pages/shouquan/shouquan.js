@@ -55,9 +55,9 @@ Page({
     console.log(e.detail.userInfo)
   }
   ,
-  denglu: function () {
-    wx.navigateBack({
-      url: '/pages/yonghu/yonghu',
-    })
-  },
+  // denglu: function () {
+  //   wx.navigateBack({
+  //     url: '/pages/yonghu/yonghu',
+  //   })
+  // },
 })

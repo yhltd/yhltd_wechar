@@ -57,19 +57,21 @@
     display: flex;
 }
 .nav-item {  
-    width: 25%;  
+    width: 25%; 
+    
     display: flex;  
-    align-items: center;  
+    /* align-items: center;   */
     flex-direction: column;  
-    padding: 20rpx;
+    /* padding: 10rpx; */
 }
-.nav-item .nav-image {  
+
+.nav-image {  
     width: 80rpx;  
     height: 80rpx;  
-    margin: 5rpx;
+    /* margin: 0rpx; */
 }
-.nav-item text {  
-    margin-top: 20rpx;  
+.nav-item-text {  
+     
     font-size: 28rpx;  
     color: gray;
 }
@@ -99,6 +101,6 @@
     width: 80%;  
     height: 2rpx;  
     background: lightgray;  
-    margin-left: 90rpx;
+    margin-left: 10%;
 }
 

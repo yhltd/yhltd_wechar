@@ -99,6 +99,7 @@ App({
     });
   },
   globalData: {
+    images: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/",
      appid : 'wx329763d21878c5a6', //填写微信小程序appid
      secret : '0fb1f26a030abfab5f8896373f449de6',//填写微信小程序secret
     

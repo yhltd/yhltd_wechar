@@ -1,52 +1,45 @@
 <import src="/pages/template/tabbar.wxml"/> 
  <template is="tabBar" data="{{tabBar}}"/>
- 
-
-
+<!-- cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/11.png -->
 <!--pages/shouye/shouye.wxml-->
 <view class="swiper-yangshi">
-
- <swiper class="post-swiper" indicator-dots='true' autoplay='true' interval='5000'>
-   <swiper-item>
-    <navigator url="/pages/huakuai1/huakuai1">
-    <image src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/11.png" class='post-swiper-img'></image>
-    </navigator>
-   </swiper-item>
-   <swiper-item>
-<navigator url="/pages/huakuai2/huakuai2">
-    <image src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/22.png" class='post-swiper-img'></image>
+<swiper class="post-swiper" indicator-dots='true' autoplay='true' interval='5000'>
+<swiper-item>
+<navigator url="/pages/huakuai1/huakuai1">
+<image  wx:if="{{image}}" src="{{image}}11.png" class='post-swiper-img'></image>
 </navigator>
-   </swiper-item>
-  </swiper>
+</swiper-item>
+<swiper-item>
+<navigator url="/pages/huakuai2/huakuai2">
+<image  wx:if="{{image}}" src="{{image}}22.png" class='post-swiper-img'></image>
+</navigator>
+</swiper-item>
+</swiper>
 </view>
-  <view class="container">
-     <!-- 分割线 -->
-  <view class="divLine"></view>
+<view class="container">
+<!-- 分割线 -->
+<view class="divLine"></view>
 </view>
-
-    <view>
-     <block wx:for="{{items}}"  wx:key="">
-       <view class="category-info">
-         <navigator url="{{item.url}}"> 
-           <image src="{{item.src}}" class="category-image">
-           </image>
-           <view class="category-text">{{item.name}}
-           </view>
-         </navigator>
-       </view>
-     
-      </block>
-    </view>
-
-  
-
-     <view class="container">
-     <!-- 分割线 -->
-  <view class="divLine"></view>
+<view>
+<block wx:for="{{items}}"  wx:key="">
+<view class="category-info">
+<navigator url="{{item.url}}"> 
+<image src="{{item.src}}" class="category-image">
+</image>
+<view class="category-text">{{item.name}}
 </view>
-    <block>
-    <navigator url="/pages/zhuti1/zhuti1"> 
-        <image src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/gongsi1.png" class='gongsi-img'></image>
+</navigator>
+</view>
+</block>
+</view>
+<view class="container">
+<!-- 分割线 -->
+<view class="divLine"></view>
+</view>
+<block>
+<navigator url="/pages/zhuti1/zhuti1"> 
+<image src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/gongsi1.png" class='gongsi-img'>
+</image>
        </navigator> 
        <navigator url="/pages/zhuti2/zhuti2"> 
         <image src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/gongsi2.png" class='gongsi-img'></image>

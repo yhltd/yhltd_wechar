@@ -1,9 +1,8 @@
 var app=getApp()
 Page({
-
   data: {
-    
-      items: [
+        
+        items: [
         {
         name: "公司简介",
           src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/gongsi.png",
@@ -62,7 +61,12 @@ Page({
   // },
   
   onLoad: function () {
-
+    var that =this;
+var image=app.globalData.images ;
+    console.log(image)
+ that.setData({
+    image:image
+ })
   }
 
 

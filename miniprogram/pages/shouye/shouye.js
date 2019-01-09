@@ -1,7 +1,7 @@
 var app=getApp()
 Page({
   data: {
-        
+    imageUrl: app.globalData.imageInfopath,
         items: [
         {
         name: "公司简介",
@@ -63,10 +63,16 @@ Page({
   onLoad: function () {
     var that =this;
 var image=app.globalData.images ;
-    console.log(image)
- that.setData({
-    image:image
- })
+    var imagepath1 = app.globalData.imageInfopath + "" 
+    let openid = app.globalData.openid || wx.getStorageSync('openid');
+    var user = wx.getStorageSync('user') || {};
+    console.log(user.openid)
+    console.log(imagepath1)
+    // console.log(image)
+    that.setData({
+        // image:image,
+        imageUrl: imagepath1
+    })
   }
 
 

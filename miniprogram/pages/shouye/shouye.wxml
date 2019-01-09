@@ -11,7 +11,7 @@
 </swiper-item>
 <swiper-item>
 <navigator url="/pages/huakuai2/huakuai2">
-<image  wx:if="{{image}}" src="{{image}}22.png" class='post-swiper-img'></image>
+<image  src="{{imageUrl+'22.png'}}" class='post-swiper-img'></image>
 </navigator>
 </swiper-item>
 </swiper>

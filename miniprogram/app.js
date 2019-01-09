@@ -100,9 +100,9 @@ App({
   },
   globalData: {
     images: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/",
-     appid : 'wx329763d21878c5a6', //填写微信小程序appid
-     secret : '0fb1f26a030abfab5f8896373f449de6',//填写微信小程序secret
-    
+    appid: 'wxd747b7dd1d8f9e34', //填写微信小程序appid
+    secret: '3199a980a6b595e75c27de6864fdd3a5',//填写微信小程序secret
+    imageInfopath:"cloud://yhltd-028b95.7968-yhltd-028b95/tupian/",
     nickName:"",
     gender: "",
     avatarUrl: "",

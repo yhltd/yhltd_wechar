@@ -5,22 +5,22 @@ Page({
         items: [
         {
         name: "公司简介",
-          src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/gongsi.png",
+            src: app.globalData.imageInfopath+'gongsi.png',
         url: "/pages/gongsijieshao/gongsijieshao",
       }, 
       {
         name: "案例详情",
-        src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xihuan.jpg",
+        src: app.globalData.imageInfopath+'xihuan.jpg',
         url: "/pages/anlixiangqing/anlixiangqing",
       }, 
       {
         name: "行业热门",
-        src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/tag.png",
+        src: app.globalData.imageInfopath +'tag.png',
         url: "/pages/hangyeremen/hangyeremen",
       },
         {
           name: "加入我们",
-          src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/telephone.png",
+          src: app.globalData.imageInfopath +'telephone.png',
           url: "/pages/jiaruwomen/jiaruwomen",
         }
       ]
@@ -30,23 +30,23 @@ Page({
       pageone: [
         {
           name: "软件开发",
-          src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/ruanjian.png",
+          src: app.globalData.imageInfopath +'ruanjian.png',
           url:"/pages/anli1/anli1"
       
         },
         {
           name: "网站建设",
-          src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/wangzhan.png",
+          src: app.globalData.imageInfopath +'wangzhan.png',
           url: "/pages/anli2/anli2"
         },
         {
           name: "小程序",
-          src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xiaochengxu.png",
+          src: app.globalData.imageInfopath +'xiaochengxu.png',
           url: "/pages/anli3/anli3"
         },
         {
           name: "手机APP",
-          src: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/shouji.png",
+          src: app.globalData.imageInfopath +'shouji.png',
           url: "/pages/anli4/anli4"
         }
       ]
@@ -62,15 +62,15 @@ Page({
   
   onLoad: function () {
     var that =this;
-var image=app.globalData.images ;
+
     var imagepath1 = app.globalData.imageInfopath + "" 
-    let openid = app.globalData.openid || wx.getStorageSync('openid');
-    var user = wx.getStorageSync('user') || {};
-    console.log(user.openid)
-    console.log(imagepath1)
-    // console.log(image)
+    // let openid = app.globalData.openid || wx.getStorageSync('openid');
+    // var user = wx.getStorageSync('user') || {};
+    // console.log(user.openid)
+    // console.log(imagepath1)
+ 
     that.setData({
-        // image:image,
+        
         imageUrl: imagepath1
     })
   }

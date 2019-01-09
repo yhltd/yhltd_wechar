@@ -4,6 +4,7 @@ Page({
     
   },
   onLoad: function (options) {
+    app.editTabBar1();
     var that = this;
     var id =options.id;
     console.log(id)

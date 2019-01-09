@@ -1,10 +1,12 @@
+<!--pages/anli2/anli2.wxml-->
 <!--pages/chanpin1/chanpin1.wxml-->
+
+<import src="/pages/template/tabbar.wxml"/> 
+ <template is="tabBar" data="{{tabBar}}"/>
+ 
 <view class='chanpinimageda'>
 <image class="chanpin-imageda" src='{{all.image1}}'></image>
 </view>
-<import src="/pages/template/tabbar.wxml"/> 
- <template is="tabBar" data="{{tabBar}}"/>
-
  <view class='chanpin1-1'> 
 
   <image class='tuijian' src='{{all.image2}}'></image>
@@ -42,4 +44,5 @@
 <view>{{all.text8}}</view>
 <view>{{all.text9}}</view>
 </view>
+
 

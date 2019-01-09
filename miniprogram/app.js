@@ -1,62 +1,5 @@
 //app.js
 App({
-//   wx.login({
-//     success:function(res){
-//       code=res.code;
-//       if(code){
-// console.log("获取"+code);
-// wx.request({
-// url: 'http://localhost:19274/XunZhan/XunZhanPhone.do?ActionName=GetOpenId&js code'+code,
-// })
-//       }
-//     }
-//   })
-
-
-  // onLaunch: function () {
-  //   var that = this
-  //   var user = wx.getStorageSync('user') || {};
-  //   var userInfo = wx.getStorageSync('userInfo') || {};
-  //   if ((!user.openid || (user.expires_in || Date.now()) < (Date.now() + 600)) && (!userInfo.nickName)) {
-  //     wx.login({
-  //       success: function (res) {
-  //         if (res.code) {
-  //           wx.getUserInfo({
-  //             success: function (res) {
-  //               var objz = {};
-  //               objz.avatarUrl = res.userInfo.avatarUrl;
-  //               objz.nickName = res.userInfo.nickName;
-  //               //console.log(objz);
-  //               wx.setStorageSync('userInfo', objz);//存储userInfo
-  //             }
-  //           });
-  //           var d = that.globalData;//这里存储了appid、secret、token串  
-  //           var l = 'https://api.weixin.qq.com/sns/jscode2session?appid=' + d.appid + '&secret=' + d.secret + '&js_code=' + res.code + '&grant_type=authorization_code';
-  //           wx.request({
-  //             url: l,
-  //             data: {},
-  //             method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT  
-  //             // header: {}, // 设置请求的 header  
-  //             success: function (res) {
-  //               var obj = {};
-  //               obj.openid = res.data.openid;
-  //               obj.expires_in = Date.now() + res.data.expires_in;
-  //               //console.log(obj);
-  //               wx.setStorageSync('user', obj);//存储openid  
-  //               console.log(obj)
-  //             }
-  //           });
-  //         } else {
-  //           console.log('获取用户登录态失败！' + res.errMsg)
-  //         }
-  //       }
-  //     });
-  //   }
-  // },
-
-
-
-
   //第一种底部  
   editTabBar: function () {
     //使用getCurrentPages可以获取当前加载中所有的页面对象的一个数组，数组最后一个就是当前页面。
@@ -99,9 +42,9 @@ App({
     });
   },
   globalData: {
-    images: "cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/",
-    appid: 'wxd747b7dd1d8f9e34', //填写微信小程序appid
-    secret: '3199a980a6b595e75c27de6864fdd3a5',//填写微信小程序secret
+  
+    // appid: 'wxd747b7dd1d8f9e34', //填写微信小程序appid
+    // secret: '3199a980a6b595e75c27de6864fdd3a5',//填写微信小程序secret
     imageInfopath:"cloud://yhltd-028b95.7968-yhltd-028b95/tupian/",
     nickName:"",
     gender: "",
@@ -110,53 +53,7 @@ App({
     city: "",
     country: "",
     language: "",
-    //第一种底部导航栏显示
-    // tabBar: {
-    //   "color": "#dddddd",
-    //   "borderStyle": "white",
-    //   "selectedColor": "#1afa29",
-    //   "backgroundColor": "#ffffff",
-    //   "list": [
-    //     {
-    //       "iconPath":"/images/shouye.png",
-    //       "pagePath":"/pages/shouye/shouye",
-    //       "seletedIconPath":"images/shouyelv.png",
-    //       "text":"首页",
-    //       "selectedColor": "#4EDF80",
-    //       "clas": "menu-item",
-    //       active: false
-    //     },
-    //     {
-    //       "iconPath":"/images/xinxi.png",
-    //       "pagePath":"/pages/xinxi/xinxi",
-    //       "selectedIconPath":"/images/xinxilv.png",
-    //       "text":"信息",
-    //       "selectedColor": "#4EDF80",
-    //       "clas": "menu-item",
-    //       active: false
-    //     },
-    //     {
-    //       "iconPath": "/images/chanpin.png",
-    //       "pagePath": "/pages/chanpin/chanpin",
-    //       "selectedIconPath": "/images/chanpinlv.png",
-    //       "text": "产品",
-    //       "selectedColor": "#4EDF80",
-    //       "clas": "menu-item",
-    //       active: false
-    //     },
-    //     {
-    //       "iconPath": "/images/yonghu.png",
-    //       "pagePath": "/pages/yonghu/yonghu",
-    //       "selectedIconPath": "/images/yonghulv.png",
-    //       "text": "用户",
-    //       "selectedColor": "#4EDF80",
-    //       "clas": "menu-item",
-    //       active: false
-    //     }
-    //   ],
-    //   "position": "bottom"
-    // },
-    //第二种底部导航栏显示
+  
     tabBar1: {
       "color": "#4F4F4F",
      

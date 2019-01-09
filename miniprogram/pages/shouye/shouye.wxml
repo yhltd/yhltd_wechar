@@ -6,7 +6,7 @@
 <swiper class="post-swiper" indicator-dots='true' autoplay='true' interval='5000'>
 <swiper-item>
 <navigator url="/pages/huakuai1/huakuai1">
-<image  wx:if="{{image}}" src="{{image}}11.png" class='post-swiper-img'></image>
+<image  src="{{imageUrl+'11.png'}}" class='post-swiper-img'></image>
 </navigator>
 </swiper-item>
 <swiper-item>
@@ -38,11 +38,11 @@
 </view>
 <block>
 <navigator url="/pages/zhuti1/zhuti1"> 
-<image src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/gongsi1.png" class='gongsi-img'>
+<image src="{{imageUrl+'gongsi1.png'}}" class='gongsi-img'>
 </image>
        </navigator> 
        <navigator url="/pages/zhuti2/zhuti2"> 
-        <image src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/gongsi2.png" class='gongsi-img'></image>
+        <image src="{{imageUrl+'gongsi2.png'}}" class='gongsi-img'></image>
         </navigator> 
         </block>
     <view class="container">
@@ -51,9 +51,9 @@
 </view>
 
 <view class="flex-wrp xiantiao">
-  <image class="xiantiao-image1" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xiantiao.png'></image>
+  <image class="xiantiao-image1" src="{{imageUrl+'xiantiao.png'}}"></image>
   <view class="liansifangshi">案例展示</view>
-  <image class="xiantiao-image1" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xiantiao.png'></image>
+  <image class="xiantiao-image1" src="{{imageUrl+'xiantiao.png'}}"></image>
 </view>
 
    
@@ -77,16 +77,16 @@
 </view>
 
 <view class="flex-wrp xiantiao">
-  <image class="xiantiao-image1" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xiantiao.png'></image>
+  <image class="xiantiao-image1" src="{{imageUrl+'xiantiao.png'}}"></image>
   <view class="liansifangshi">行业资讯</view>
-  <image class="xiantiao-image1" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xiantiao.png'></image>
+  <image class="xiantiao-image1" src="{{imageUrl+'xiantiao.png'}}"></image>
 </view>
 
 
 
 <view class="zixun">
  <navigator url="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xiaochengxu"> 
-  <image class="zixun-image" src="cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xiaochengxuzixun.png" >
+  <image class="zixun-image" src="{{imageUrl+'xiaochengxuzixun.png'}}" >
  </image>
   </navigator> 
  <view class="zixun-text">什么是小程序？</view>
@@ -99,13 +99,13 @@
 </view>
 
 <view class="flex-wrp xiantiao">
-  <image class="xiantiao-image1" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xiantiao.png'></image>
+  <image class="xiantiao-image1" src="{{imageUrl+'xiantiao.png'}}"></image>
   <view class="liansifangshi">联系我们</view>
-  <image class="xiantiao-image1" src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/xiantiao.png'></image>
+  <image class="xiantiao-image1" src="{{imageUrl+'xiantiao.png'}}"></image>
 </view>
     
 <view class="lianxiwomen">
-    <image class='lianxiwomen-image'  src='cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/yunheweilai.jpg'> </image>
+    <image class='lianxiwomen-image'  src="{{imageUrl+'yunheweilai.jpg'}}"> </image>
 </view>
    <view >
     <view class="liansifangshi">云合未来计算机技术有限公司</view>

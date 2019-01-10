@@ -26,7 +26,6 @@
 .jinru-image{
   width: 50rpx;
   height: 50rpx;
- 
 }
 .biaoti{
   text-align: center;

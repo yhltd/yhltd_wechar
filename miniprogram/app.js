@@ -46,6 +46,7 @@ App({
     // appid: 'wxd747b7dd1d8f9e34', //填写微信小程序appid
     // secret: '3199a980a6b595e75c27de6864fdd3a5',//填写微信小程序secret
     imageInfopath:"cloud://yhltd-028b95.7968-yhltd-028b95/tupian/",
+                 
     nickName:"",
     gender: "",
     avatarUrl: "",

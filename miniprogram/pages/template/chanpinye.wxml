@@ -11,7 +11,7 @@
 <navigator  url="/pages/chanpin1/chanpin1?id={{all[i]._id}}">
 <view  class='jinru'>
 <view class='jinru-text'>进去看看</view>
-<image src="{{imageUrl}}+'jinru.png'" class='jinru-image'></image>
+<image src="cloud://yhltd-028b95.7968-yhltd-028b95/tupian/jinru.png" class='jinru-image'></image>
 
 </view>
 </navigator>

@@ -1,5 +1,5 @@
-/* pages/shouye/shouye.wxss */
 
+/* pages/shouye/shouye.wxss */
 .swiper-yangshi{
    height:350rpx;
    width: 100%
@@ -7,7 +7,6 @@
 .post-swiper{
   width:100%;
   height:350rpx;
-
 }
 .post-swiper-img{
   width:100%;
@@ -35,7 +34,6 @@
 .gongsi-img{
 height:375rpx;
 width: 100%
-
 }
 .liansifangshi{
   text-align: center;
@@ -52,7 +50,6 @@ width: 100%
  width: 100%;
  height:20rpx;
 }
-
 .zixun{
   display: flex;
   

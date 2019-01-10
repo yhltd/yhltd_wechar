@@ -10,11 +10,11 @@ Page({
   onLoad: function () {
     var that = this;
     var all=[];
-    var imagepath1 = app.globalData.imageInfopath + "" 
-    console.log(imagepath1)
-    that.setData({
-      imageUrl: imagepath1
-    })
+    // var imagepath1 = app.globalData.imageInfopath + "" 
+    // console.log(imagepath1)
+    // that.setData({
+    //   imageUrl: imagepath1
+    // })
     const db = wx.cloud.database();
     db.collection('todos').get({
       success(res) {

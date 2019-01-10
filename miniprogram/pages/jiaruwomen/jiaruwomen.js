@@ -1,34 +1,36 @@
 // pages/jiaruwomen/jiaruwomen.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    imageUrl: app.globalData.imageInfopath,
     items: [
       {
         name: "16619776280",
-        src: 'cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/dianhua.png',
+        src: app.globalData.imageInfopath+'dianhua.png',
         
       },
       {
         name: "512250428@qq.com",
-         src : 'cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/youxiang.png',
+        src: app.globalData.imageInfopath +'youxiang.png',
         
       },
       {
         name: "BQWL07910",
-        src:'cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/weixin.png',
+        src: app.globalData.imageInfopath +'weixin.png',
         
       },
       {
         name: "512250428",
-        src:'cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/QQ.png',
+        src: app.globalData.imageInfopath +'QQ.png',
         url:"/pages/dakaiQQ/dakaiQQ"
       },
       {
         name: "大连市高新园区设计城A座1204室",
-        src:'cloud://yhltd-ca4527.7968-yhltd-ca4527/tupian/dizhi.png',
+        src: app.globalData.imageInfopath +'dizhi.png',
         
       }
       ]

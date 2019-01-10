@@ -1,11 +1,12 @@
 // pages/hangyeremen/hangyeremen.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    imageUrl:app.globalData.imageInfopath
   },
 
   /**

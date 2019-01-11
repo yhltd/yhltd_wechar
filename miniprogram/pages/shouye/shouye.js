@@ -29,10 +29,14 @@ Page({
     anlizhanshi: {
       pageone: [
         {
+          name: "单片机硬件开发",
+          src: app.globalData.imageInfopath + 'wangzhan.png',
+          // url: "/pages/anli2/anli2"
+        },
+        {       
           name: "软件开发",
           src: app.globalData.imageInfopath + 'ruanjian.png',
           url: "/pages/anli1/anli1"
-
         },
         {
           name: "网站建设",

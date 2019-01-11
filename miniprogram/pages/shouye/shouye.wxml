@@ -14,7 +14,14 @@
 <image  src="{{imageUrl+'22.png'}}" class='post-swiper-img'></image>
 </navigator>
 </swiper-item>
+<swiper-item>
+<!-- lewis add -->
+<navigator url="">
+<image  src="{{imageUrl+'QQ截图20190111125143.png'}}" class='post-swiper-img'></image>
+</navigator>
+</swiper-item>
 </swiper>
+
 </view>
 <view class="container">
 <!-- 分割线 -->
@@ -90,6 +97,7 @@
  </image>
   </navigator> 
  <view class="zixun-text">什么是小程序？</view>
+ 
 </view>
 
 <view class="container">

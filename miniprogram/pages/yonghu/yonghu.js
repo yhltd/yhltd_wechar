@@ -170,6 +170,8 @@
 var app = getApp()
 Page({
   data: {
+    showView: true,
+    text: '\n',
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     orderItems: [
       {
@@ -226,7 +228,8 @@ onLoad: function () {
         scope: 'scope.record',
         success() {
           // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
-          wx.startRecord()
+          // wx.startRecord()
+          wx.login() 
         }
       })
     } else {
@@ -244,6 +247,16 @@ onLoad: function () {
       })
     }
   },
-
+  onGotUserInfo(e) {
+    var that = this;
+    console.log(e.detail.errMsg)
+    console.log(e.detail.userInfo)
+    console.log(e.detail.rawData)
+    this.setData({
+      login_name: e.detail.userInfo.nickName,
+      gender: e.detail.userInfo.gender,
+       showView: (!that.data.showView)
+        })
+  },
  
 })

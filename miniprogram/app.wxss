@@ -95,7 +95,8 @@ margin:50rpx 150rpx 0rpx 0rpx;
 }  
 .tab-bar{  
   display: flex;
-  position: fixed; 
+  position: fixed;
+  
   width: 100%;  
 height: 45px;
 

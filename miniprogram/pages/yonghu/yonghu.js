@@ -92,7 +92,7 @@
 //   xieru: function () {
 //     const db = wx.cloud.database();
 
-//     db.collection('todos').add({
+    // db.collection('todos').add({
 //       data: {
 //         age: 100
 //       },
@@ -222,6 +222,24 @@ onLoad: function () {
       }
     })
   },
+  // xieru: function () {
+//     const db = wx.cloud.database();
+
+//     db.collection('todos').add({
+//       data: {
+//         age: 100
+//       },
+//       success: res => {
+//         // 在返回结果中会包含新创建的记录的 _id
+//         this.setData({
+//           counterId: res._id,
+//           age: 1
+//         })
+//         wx.showToast({
+//           title: '新增记录成功',
+//         })
+//         console.log('[数据库] [新增记录] 成功，记录 _id: ', res._id)
+//       },
   bindGetUserInfo: function (e) {
     if (e.detail.userInfo) {
        wx.authorize({
@@ -230,6 +248,9 @@ onLoad: function () {
           // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
           // wx.startRecord()
           wx.login() 
+          const db = wx.cloud.database();
+
+    
         }
       })
     } else {
@@ -257,6 +278,7 @@ onLoad: function () {
       gender: e.detail.userInfo.gender,
        showView: (!that.data.showView)
         })
+    
   },
  
 })

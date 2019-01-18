@@ -24,58 +24,41 @@ Page({
   },
   jiaru: function () {
     var that=this;
+    var open={}
     var obj = wx.getStorageSync("openid")
-    var id = that.data.id;
-    console.log(id)
-    // console.log(obj)
-    var openid=obj.openid;
-    console.log(openid)
+     open.id = that.data.id;
+    open.openid=obj.openid;
     
+    console.log(open)
     const db = wx.cloud.database();
     db.collection('shoucang').get({
       success(res) {
-        console.log(res.data)
         var countResult = res.data.length;
-      
-        if (openid!=1){
-          
+        console.log(res.data)
+        for (var i = 0; i < countResult;i++)
+        {
+          var openidd = res.data[i]
+          console.log(openidd)
+          if(open==openidd){
+            wx.showToast({
+              title: '您已收藏',
+            })
+          }
+          else if(open != openidd){
           db.collection('shoucang').add({
-
-            data: {
-             _id:openid
-              
-            },
-            success: res => {
-              // 在返回结果中会包含新创建的记录的 _id
-
-              wx.showToast({
-                title: '新增记录成功',
-              })
-              
-
-            }
+                data: {
+                  id: id
+                     },
+                success: res => {
+                  wx.showToast({
+            title: '收藏成功',
+            })
+           },
           })
-         
-        }
-        else if(openid = res.data[i]._id){
-        // db.collection('shoucang').doc(openid).update({
-          //       data: {
-
-          //            },
-          //  success: res => {
-
-          //         wx.showToast({
-          //   title: '修改成功',
-          //   })
-          //  },
-          // })
-   
-     }  
+          }
+        } 
       }
      }
     )
-
-
-
   }
 })

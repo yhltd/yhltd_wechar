@@ -41,8 +41,10 @@ Page({
         //循环取值
         for (let i = 0; i < countResult; i++) {
           // oki
+          
           console.log(all[0][i]._id)
         }
+        wx.setStorageSync('countResult', countResult)
       }
     })
  

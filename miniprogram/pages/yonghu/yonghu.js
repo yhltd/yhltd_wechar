@@ -177,25 +177,25 @@ Page({
       {
         typeId: 0,
         name: '待付款',
-        url: 'bill',
+        url: '/pages/gouwuche/gouwuche',
         imageurl: '/pages/images/personal_pay.png',
       },
       {
         typeId: 1,
         name: '发货中',
-        url: 'bill',
+        url: '/pages/fahuozhong/fahuozhong',
         imageurl: '/pages/images/personal_receipt.png',
       },
       {
         typeId: 2,
         name: '代收货',
-        url: 'bill',
+        url: '/pages/daishouhuo/daishouhuo',
         imageurl: '/pages/images/personal_comment.png'
       },
       {
         typeId: 3,
         name: '待评价',
-        url: 'bill',
+        url: '/pages/daipingjia/daipingjia',
         imageurl: '/pages/images/personal_service.png'
       }
     ],

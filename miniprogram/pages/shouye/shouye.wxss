@@ -60,6 +60,6 @@ width: 100%
   float: left
 }
 .lianxiwomen-image{
-   width: 65%;
-  height: 400rpx;
+   width: 400rpx;
+  height: 350rpx;
 }

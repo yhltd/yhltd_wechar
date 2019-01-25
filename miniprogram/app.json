@@ -32,8 +32,13 @@
     "pages/kefu/kefu",
     "pages/gouwuche/gouwuche",
     "pages/jiaru/jiaru",
-    "pages/goumai/goumai"
-   
+    "pages/goumai/goumai",
+   "pages/jutixinxi/jutixinxi",
+   "pages/daishouhuo/daishouhuo",
+   "pages/fahuozhong/fahuozhong",
+ 
+   "pages/daipingjia/daipingjia"
+
   ],
   "window": {
     "background-Color": "#ffffff",

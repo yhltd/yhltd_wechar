@@ -1,2 +1,20 @@
-<!--pages/xinxi/xinxi.wxml-->
-<text>pages/xinxi/xinxi.wxml</text>
+<image  src="{{imageUrl+'xinwenzhongxin.jpg'}}" class='xinwen_image'></image>
+
+<block wx:for="{{all}}"  wx:for-index='i' wx:key=""> 
+<view class="container">
+<!-- 分割线 -->
+<view class="divLine"></view>
+</view>
+<navigator class='text' url="/pages/jutixinxi/jutixinxi?id={{all[i]._id}}">
+
+<image src='{{all[i].image1}}' class='image1'></image>
+<view class='text1' >.{{all[i].text1}}
+
+<image src="cloud://yhltd-028b95.7968-yhltd-028b95/tupian/jinru.png" class='jinru-image'></image>
+<view class='shijianchuo'>{{Y + "/"+M + "/"+D +" "+ h + ":" + m + ":" + s}}</view>
+</view>
+
+
+</navigator>
+
+</block>

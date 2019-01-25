@@ -1,34 +1,4 @@
 {
-  "tabBar": {
-    "color": "#dddddd",
-    "borderStyle": "white",
-    "selectedColor": "#1afa29",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "iconPath": "images/shouye.png",
-        "pagePath": "pages/shouye/shouye",
-        "selectedIconPath": "images/shouyelv.png",
-        "text": "首"
-      },
-      {
-        "iconPath": "images/xinxi.png",
-        "pagePath": "pages/xinxi/xinxi",
-        "selectedIconPath": "images/xinxilv.png",
-        "text": "信息"
-      },
-      {
-        "iconPath": "images/chanpin.png",
-        "pagePath": "pages/chanpin/chanpin",
-        "selectedIconPath": "images/chanpinlv.png",
-        "text": "产品"
-      },
-      {
-        "iconPath": "images/yonghu.png",
-        "pagePath": "pages/yonghu/yonghu",
-        "selectedIconPath": "images/yonghulv.png",
-        "text": "用户"
-      }
-    ]
-  }
+
+  "navigationBarTitleText": "产品页"
 }

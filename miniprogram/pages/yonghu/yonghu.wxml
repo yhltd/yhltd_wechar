@@ -64,10 +64,12 @@
   <text class="myorderlook-text">查看全部订单</text></view><view class="line"></view><view class="navs">
 
   <block wx:for-items="{{orderItems}}" wx:key="name">
-    <view class="nav-item" catchtap="toOrder" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+   
+ <navigator class="nav-item" url='{{item.url}}' data-type="{{item.name}}" data-typeid="{{item.typeId}}">
       <image src="{{item.imageurl}}" class="nav-image" />
       <text class='nav-item-text'>{{item.name}}</text>
-    </view>
+ </navigator>
+   
   </block>
  </view><view class="separate"></view><view class="person-list">
  
@@ -77,8 +79,10 @@
   </view> -->
   <view class="person-line"></view>
   <view class="list-item">
+<navigator class="list-item" url='/pages/gouwuche/gouwuche'>
     <image class="item-image" src="/pages/images/personal_favorite.png"></image>
     <text class="item-text">我的收藏</text>
+</navigator>
   </view>
   <view class="person-line"></view>
   <view class="list-item">

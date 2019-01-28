@@ -36,16 +36,16 @@
    "pages/jutixinxi/jutixinxi",
    "pages/daishouhuo/daishouhuo",
    "pages/fahuozhong/fahuozhong",
- 
+ "pages/daifukuang/daifukuang",
    "pages/daipingjia/daipingjia"
 
   ],
   "window": {
-    "background-Color": "#ffffff",
+   
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff0000",
     "navigationBarTitleText": "云合未来",
-    "navigationBarTextStyle": "light"
+    "navigationBarTextStyle": "white"
   }
   ,
   "tabBar": {

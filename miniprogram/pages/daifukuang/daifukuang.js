@@ -35,7 +35,7 @@ Page({
     const db = wx.cloud.database();
     db.collection('shoucang').where({
       _openid: openid,
-      zhuangtai: 3
+      zhuangtai: 1
     })
       .get({
         success(res) {
@@ -83,17 +83,17 @@ Page({
       .get({
         success(res) {
           console.log(res.data[0]._id)
-
           db.collection('shoucang').doc(res.data[0]._id).update({
-            data: {
-              zhuangtai: 4,
-            },
+         data: {
+              zhuangtai:2,
+                 },
             success: res => {
-              wx.showToast({
-                title: '已收货',
-              })
-            },
-          })
+             wx.showToast({
+             title: '购买成功',
+                         })
+                            },
+                 })
+         
         }
       })
   },

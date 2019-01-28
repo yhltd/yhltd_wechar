@@ -5,12 +5,14 @@
 <view class="swiper-yangshi">
 <swiper class="post-swiper" indicator-dots='true' autoplay='true' interval='5000'>
 <swiper-item>
-<navigator url="/pages/huakuai1/huakuai1">
+<!-- <navigator url="/pages/huakuai1/huakuai1"> -->
+<navigator>
 <image  src="{{imageUrl+'11.png'}}" class='post-swiper-img'></image>
 </navigator>
 </swiper-item>
 <swiper-item>
-<navigator url="/pages/huakuai2/huakuai2">
+<!-- <navigator url="/pages/huakuai2/huakuai2"> -->
+<navigator >
 <image  src="{{imageUrl+'22.png'}}" class='post-swiper-img'></image>
 </navigator>
 </swiper-item>

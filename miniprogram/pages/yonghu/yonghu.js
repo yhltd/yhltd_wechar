@@ -177,7 +177,7 @@ Page({
       {
         typeId: 0,
         name: '待付款',
-        url: '/pages/gouwuche/gouwuche',
+        url: '/pages/daifukuang/daifukuang',
         imageurl: '/pages/images/personal_pay.png',
       },
       {

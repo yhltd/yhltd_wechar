@@ -86,8 +86,10 @@
   </view>
   <view class="person-line"></view>
   <view class="list-item">
+<navigator class="list-item" url='/pages/shouhuodizhi/shouhuodizhi'>
     <image class="item-image" src="/pages/images/personal_site.png"></image>
     <text class="item-text">收货地址</text>
+</navigator>
   </view>
   <view class="person-line"></view>
   <view class="list-item">

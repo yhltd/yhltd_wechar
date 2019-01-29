@@ -1,7 +1,10 @@
 <!--pages/fahuozhong/fahuozhong.wxml-->
+
+
+
 <block  wx:for="{{all}}" wx:for-index='i' wx:key="" >
 <view class="chanpin0">
-<navigator  url="/pages/chanpin1/chanpin1?id={{all[i]._id}}">
+<navigator  url="/pages/dingdanxiangqing/dingdanxiangqing?id={{all[i]._id}}">
 <image class="chanpin0-image" src='{{all[i].image1}}' ></image>
 </navigator>
 <view class='text'>

@@ -1,8 +1,9 @@
 <template name="dingdan"> 
-<image></image>
-<view> 地址</view>
-<view>{{all.chanpinming}}</view>
-<view>{{all.jiagezheng+"."+all.jiagexiao}}</view>
-<view>查看物流</view>
-<view>订单编号=""</view>
+<image src='{{all.image1}}'></image>
+<view>地址:{{allll[0].dizhi}}</view>
+<view>商品名：{{all.chanpinming}}</view>
+<view>价格：{{all.jiagezheng+"."+all.jiagexiao}}</view>
+<view>物流信息</view>
+<view></view>
+<view>订单编号：{{alll[0].outTradeNo}}</view>
 </template> 

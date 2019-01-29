@@ -1,0 +1,8 @@
+<!--pages/shouhuodizhi/shouhuodizhi.wxml-->
+
+<view class='box'>
+<form bindsubmit='dizhi'>
+      <input placeholder="请输入新的地址"  name='xindizhi'></input>
+      <button form-type='submit' >修改</button>
+  </form>
+</view>

@@ -1,11 +1,21 @@
 
 <import src="/pages/template/tabbar.wxml"/> 
  <template is="tabBar" data="{{tabBar}}"/>
- 
- <video class='video' src='{{all.shipin}}'wx:if="{{all.shipin!=null}}"></video>
-<view class='chanpinimageda'>
+ <swiper class="chanpinimageda" indicator-dots='true' autoplay='true' interval='5000'>
+<swiper-item>
+ <image  src='{{all.image1}}'wx:if="{{all.image1!=null}}"></image>
+ </swiper-item>
+<swiper-item>
+ <image  src='{{all.image1}}'wx:if="{{all.image1!=null}}"></image>
+ </swiper-item>
+<swiper-item>
+ <image  src='{{all.image1}}'wx:if="{{all.image1!=null}}"></image>
+ </swiper-item>
+ </swiper>
+<!-- <view class='chanpinimageda'>
 <image class="chanpin-imageda" src='{{all.image1}}'wx:if="{{all.image1!=null}}"></image>
-</view>
+</view> -->
+
  <view class='chanpin1-1'> 
 
   <image class='tuijian' src='{{all.image2}}'wx:if="{{all.image2!=null}}"></image>
@@ -22,8 +32,8 @@
      <!-- 分割线 -->
   <view class="divLine"></view>
 </view>
+<video class='video' src='{{all.shipin}}'wx:if="{{all.shipin!=null}}"></video>
 
-<view class='chanpin-kong1'> </view>
 <view class='chanpin1-text1'wx:if="{{all.text1!=null}}">{{all.text1}}</view>
 <view class='chanpin1-text2'wx:if="{{all.text2!=null}}">{{all.text2}}</view>
 <view class='image2-height'>

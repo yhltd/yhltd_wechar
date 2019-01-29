@@ -6,7 +6,6 @@ Page({
   
   },
   onLoad: function (options) {
-    
     app.editTabBar1(); //底部栏
 
     var that = this;
@@ -26,7 +25,14 @@ Page({
   },
   jiaru: function () {
     var that=this;
-    
+
+    var outTradeNo = "";  //订单号
+    for (var i = 0; i < 6; i++) //6位随机数，用以加在时间戳后面。
+    {
+      outTradeNo += Math.floor(Math.random() * 10);
+    }
+    outTradeNo = new Date().getTime() + outTradeNo;  //时间戳，用来生成订单号。
+
     var obj = wx.getStorageSync("openid")
     var idd = that.data.id;
     var openid=obj.openid;
@@ -49,7 +55,8 @@ Page({
                 db.collection('shoucang').add({
                   data: {
                     id: idd,
-                    zhuangtai:1
+                    zhuangtai:1,
+                    outTradeNo: outTradeNo
                   },
                   success: res => {
                     wx.showToast({

@@ -37,7 +37,9 @@
    "pages/daishouhuo/daishouhuo",
    "pages/fahuozhong/fahuozhong",
  "pages/daifukuang/daifukuang",
-   "pages/daipingjia/daipingjia"
+   "pages/daipingjia/daipingjia",
+   "pages/shouhuodizhi/shouhuodizhi",
+   "pages/dingdanxiangqing/dingdanxiangqing"
 
   ],
   "window": {

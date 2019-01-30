@@ -1,9 +1,40 @@
 <template name="dingdan"> 
-<image src='{{all.image1}}'></image>
-<view>地址:{{allll[0].dizhi}}</view>
-<view>商品名：{{all.chanpinming}}</view>
-<view>价格：{{all.jiagezheng+"."+all.jiagexiao}}</view>
-<view>物流信息</view>
-<view></view>
+<image src='{{beijing}}' class='image2'></image>
+
+<view class='view4'>
+<image src='cloud://yhltd-028b95.7968-yhltd-028b95/tupian/dizhi.png' class='image3'></image>
+<view>{{allll[0].dizhi}}</view>
+</view>
+
+<view class="container">
+<!-- 分割线 -->
+<view class="divLine"></view>
+</view>
+
+
+<view class='view5' >
+<image src='{{all.image1}}' class='image1'></image>
+
+<view class='view1'> 
+<view>{{all.chanpinming}}</view>
+<view class='view2'>￥{{all.jiagezheng+"."+all.jiagexiao}}</view>
+</view>
+</view>
+
+<view class="container">
+<!-- 分割线 -->
+<view class="divLine"></view>
+</view>
+<view class='view6'>
+<image class='image4'></image>
+<view>订单信息</view>
+</view>
+<view  class='view3'>物流状态：{{wuliu}}</view>
+
 <view>订单编号：{{alll[0].outTradeNo}}</view>
+<view>订单金额：￥{{all.jiagezheng+"."+all.jiagexiao}}</view>
+<view>创建时间：{{shijian}}</view>
+<view>付款时间：{{shijian}}</view>
+<view>成交时间：{{shijian}}</view>
+<button class="chanpin-text2"  bindtap='fahuozhong'data-id='{{all[i]._id}}'>{{xiayibu}}</button>
 </template> 

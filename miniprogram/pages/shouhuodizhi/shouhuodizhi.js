@@ -77,14 +77,32 @@ Page({
     })
       .get({
         success: res => {
-          console.log(res.data)
+          console.log(res.data.id)
+          db.collection('dizhi').doc(res.data.id).update({
+      data: {
+        dizhi: xindizhi
+
+      },
+      success: res => {
+        
+        wx.showToast({
+          title: '修改成功',
+        })
+      },
+    })
+
           if (res.data == "") {
     db.collection('dizhi').add({
       data: {
-        // _openid: openid,
        dizhi:xindizhi
-      }
-      })
+      },
+        success: res => {
+
+        wx.showToast({
+          title: '修改成功',
+                    })
+                        },
+                              })
        }
         }
       })

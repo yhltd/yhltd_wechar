@@ -59,9 +59,16 @@
 
   <view class="long-line"></view>
  <view class="separate"></view>
- <view class="order" catchtap="toOrder">
-  <text class="myorder-text">我的订单</text>
-  <text class="myorderlook-text">查看全部订单</text></view><view class="line"></view><view class="navs">
+ <view class="order" >
+<navigator url="/pages/gouwuche/gouwuche" class="myorder-text">
+  <text >我的订单</text>
+</navigator>
+<navigator url="/pages/gouwuche/gouwuche" class="myorderlook-text">
+  <text >查看全部订单</text>
+ </navigator>
+ </view>
+ 
+ <view class="line"></view><view class="navs">
 
   <block wx:for-items="{{orderItems}}" wx:key="name">
    

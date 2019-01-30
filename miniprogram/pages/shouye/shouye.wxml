@@ -46,11 +46,11 @@
 <view class="divLine"></view>
 </view>
 <block>
-<navigator url="/pages/zhuti1/zhuti1"> 
+<navigator url="/pages/chanpin1/chanpin1?id=XE58QYnnuWjciwHc"> 
 <image src="{{imageUrl+'gongsi1.png'}}" class='gongsi-img'>
 </image>
        </navigator> 
-       <navigator url="/pages/zhuti2/zhuti2"> 
+       <navigator url="/pages/chanpin1/chanpin1?id=XE58SeSiwXKAQonq"> 
         <image src="{{imageUrl+'gongsi2.png'}}" class='gongsi-img'></image>
         </navigator> 
         </block>

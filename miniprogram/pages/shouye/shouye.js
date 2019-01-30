@@ -31,27 +31,27 @@ Page({
         {
           name: "单片机硬件开发",
           src: app.globalData.imageInfopath + 'wangzhan.png',
-          // url: "/pages/anli2/anli2"
+          url: "/pages/chanpin1/chanpin1?id=XDgk2nkPDdDCJ3QH"
         },
         {       
           name: "软件开发",
           src: app.globalData.imageInfopath + 'ruanjian.png',
-          url: "/pages/anli1/anli1"
+          url: "/pages/chanpin1/chanpin1?id=XCBDTnffS3SWOCjG"
         },
         {
           name: "网站建设",
           src: app.globalData.imageInfopath + 'wangzhan.png',
-          url: "/pages/anli2/anli2"
+          url: "/pages/chanpin1/chanpin1?id=XCCC13ffS3SWOXSZ"
         },
         {
           name: "小程序",
           src: app.globalData.imageInfopath + 'xiaochengxu.png',
-          url: "/pages/anli3/anli3"
+          url: "/pages/chanpin1/chanpin1?id=XCCC2sDR1TiNEP9l"
         },
         {
           name: "手机APP",
           src: app.globalData.imageInfopath + 'shouji.png',
-          url: "/pages/anli4/anli4"
+          url: "/pages/chanpin1/chanpin1?id=XCCC3N7E7L4w38Y9"
         }
       ]
     }

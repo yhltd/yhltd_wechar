@@ -25,7 +25,24 @@ Page({
   },
   jiaru: function () {
     var that=this;
-
+    var timestamp = Date.parse(new Date());
+    timestamp = timestamp / 1000;
+    // console.log("当前时间戳为：" + timestamp);
+    var n = timestamp * 1000;
+    var date = new Date(n);
+    //年
+    var Y = date.getFullYear();
+    //月
+    var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1);
+    //日
+    var D = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+    //时
+    var h = date.getHours();
+    //分
+    var m = date.getMinutes();
+    //秒
+    var s = date.getSeconds();
+    var shijian = Y + "-" + M + "-" + D + " " + h + ":" + m + ":" + s;
     var outTradeNo = "";  //订单号
     for (var i = 0; i < 6; i++) //6位随机数，用以加在时间戳后面。
     {
@@ -56,7 +73,8 @@ Page({
                   data: {
                     id: idd,
                     zhuangtai:1,
-                    outTradeNo: outTradeNo
+                    outTradeNo: outTradeNo,
+                    shijian:shijian
                   },
                   success: res => {
                     wx.showToast({

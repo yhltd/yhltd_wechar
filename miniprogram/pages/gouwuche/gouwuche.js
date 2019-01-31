@@ -90,6 +90,8 @@ Page({
             wx.showToast({
              title: '取消收藏成功',
                   })
+             this.onLoad()
+             this.onShow()
                  },
               })
           }

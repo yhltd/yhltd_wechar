@@ -7,7 +7,7 @@
   <view class="divLine"></view>
 </view>
 
-
+<!-- 
 <view class='shouhang'>
 <image class="image1" src='{{all.image1}}'></image>
 <view class='chanpinming'>{{all.chanpinming}}</view>
@@ -17,6 +17,10 @@
 </view>
 </view>
 
-<button bindtap="zhifu" >微信支付</button>
+<button bindtap="zhifu" >微信支付</button> -->
+<view class="container">
+    <input type="text" bindinput="getOrderCode" style="border:1px solid #ccc;"  />
+    <button bindtap="pay">立即支付</button>
+</view>
 
 

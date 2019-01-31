@@ -36,5 +36,40 @@
 <view>创建时间：{{shijian}}</view>
 <view>付款时间：{{shijian}}</view>
 <view>成交时间：{{shijian}}</view>
-<button class="chanpin-text2"  bindtap='fahuozhong'data-id='{{all[i]._id}}'>{{xiayibu}}</button>
+
+<view class="container">
+<!-- 分割线 -->
+<view class="divLine"></view>
+</view>
+
+<view class='box' wx:if="{{xiayibu == '评价'}}">
+<!-- <image class="xing1" src='/pages/images/xing1.png'></image> -->
+
+<!-- <view> -->
+<!-- <view>一:显示后台给的评分</view>
+<block wx:for="{{one_1}}">
+<image class="xing1" src='/pages/images/xing1.png'></image>
+</block>
+<block wx:for="{{two_1}}">
+<image class="xing1" src='/pages/images/xing2.png'></image>
+</block>
+</view>
+<view>这里num给的是几分就显示几颗星星</view> -->
+ 
+<!-- <view style='margin-top:60px;'>二:显示用户选择的评分</view> -->
+星级<block wx:for="{{one_2}}" wx:key="">
+<image catchtap='in_xin' class="xing1" id='{{index+1}}' data-in='use_sc2' src='/pages/images/xing2.png'></image>
+</block>
+<block wx:for="{{two_2}}" wx:key="">
+<image catchtap='in_xin' class="xing1" id='{{index+1}}' data-in='use_sc' src='/pages/images/xing1.png'></image>
+</block>
+<view>{{one_2}}星</view>
+
+<form bindsubmit='fahuozhong'>
+      <input placeholder="留下您的评价"  name='pingjia'></input>
+      <button form-type='submit'  data-id='{{all[i]._id}}'>评价</button>
+  </form>
+</view>
+
+<button class="chanpin-text2"  bindtap='fahuozhong'data-id='{{all[i]._id}}'wx:if="{{xiayibu != '评价'}}">{{xiayibu}}</button>
 </template> 

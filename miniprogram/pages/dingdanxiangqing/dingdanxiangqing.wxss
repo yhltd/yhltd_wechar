@@ -43,3 +43,11 @@ margin: 80rpx 0 0 0
    height: 50rpx;
    float: left
 }
+.xing1{
+  height: 60rpx;
+  width: 60rpx;
+  
+  display: inline-block;
+  
+   
+}

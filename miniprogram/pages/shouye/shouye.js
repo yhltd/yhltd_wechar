@@ -58,22 +58,45 @@ Page({
 
   }
   ,
-  // onShow: function () {
-  //   app.editTabBar();    //显示自定义的底部导航
-  // },
+  compare: function (property) {
+    return function (a, b) {
+      var value1 = a[property];
+      var value2 = b[property];
+      return value2 - value1;
+    }
+  },
 
   onLoad: function () {
     var that = this;
     var imagepath1 = app.globalData.imageInfopath + ""
-    // let openid = app.globalData.openid || wx.getStorageSync('openid');
-    // var user = wx.getStorageSync('user') || {};
-    // console.log(user.openid)
-    // console.log(imagepath1)
+    
 
     that.setData({
 
       imageUrl: imagepath1
     })
+  },
+ 
+  onShow:function(){
+    var that = this;
+    var all = [];
+    const db = wx.cloud.database();
+    db.collection('tupian1').get({
+      success(res) {
+       
+        all.push(res.data)
+        all[0].sort(that.compare("Sort_index"));//排序
+        that.setData({
+          all: all[0]
+        },
+          console.log(all[0])
+        )
+        
+      }
+    })
+
   }
+  
+
 
 })

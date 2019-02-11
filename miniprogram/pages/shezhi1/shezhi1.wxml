@@ -1,0 +1,20 @@
+<!--pages/shezhi1/shezhi1.wxml-->
+<view class='box'>
+<form bindsubmit='shezhi'>
+
+<view>图片名称:</view>
+<input name='tupianmingchen'></input>
+
+<view>路径:</view>
+<input name='lujing'></input>
+
+<view>绑定属性:</view>
+<input name='bangdingshuxing'></input>
+
+<button form-type='submit'>添加</button>
+<button>删除</button>
+</form>
+</view>
+<view bindtap='changeBigImg'>本地图片
+<image   src='{{path}}'></image>
+</view>

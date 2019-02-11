@@ -110,6 +110,9 @@
   </view>
   <view class="person-line"></view>
   <view class="list-item">
+ <navigator class="list-item" url='/pages/shezhi/shezhi'>
     <image class="item-image" src="/pages/images/personal_customer.png"></image>
+
     <text class="item-text">用户设置</text>
+ </navigator>
   </view></view><view class="separate"></view>

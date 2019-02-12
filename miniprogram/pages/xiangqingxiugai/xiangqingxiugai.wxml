@@ -1,0 +1,17 @@
+<!--pages/xiangqingxiugai/xiangqingxiugai.wxml-->
+
+<view class='box'>
+<form bindsubmit='changeBigImg'>
+
+<view>名字修改：
+<input name='tupianmingchen'> </input>
+</view>
+<view>路径修改:
+<input name='lujing'> </input>
+</view>
+<view>绑定修改:
+<input name='bangdingshuxing'> </input>
+</view>
+<button form-type='submit'>选择图片并修改</button>
+</form>
+</view>

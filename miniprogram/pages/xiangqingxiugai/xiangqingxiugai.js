@@ -1,4 +1,4 @@
-// pages/shezhi1/shezhi1.js
+// pages/xiangqingxiugai/xiangqingxiugai.js
 var app = getApp();
 Page({
 
@@ -8,18 +8,18 @@ Page({
   data: {
 
   },
-
-   
-   changeBigImg(e) {
+  changeBigImg(e) {
     let that = this;
     let openid = app.globalData.openid || wx.getStorageSync('openid');
-     var tupianmingchen = e.detail.value.tupianmingchen
-     var lujing = e.detail.value.lujing
-     var bangdingshuxing = e.detail.value.bangdingshuxing
+    var id=e.id;
+    console.log(id)
+    var tupianmingchen = e.detail.value.tupianmingchen
+    var lujing = e.detail.value.lujing
+    var bangdingshuxing = e.detail.value.bangdingshuxing
     wx.chooseImage({
       sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
       sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
-   success: function (res) {
+      success: function (res) {
         wx.showLoading({
           title: '上传中',
         });
@@ -27,12 +27,12 @@ Page({
         let filePath = res.tempFilePaths[0];
         const name = Math.random() * 1000000;
         const cloudPath = name + filePath.match(/\.[^.]+?$/)[0]
-       
+
         wx.cloud.uploadFile({
-          cloudPath: "tupian/"+cloudPath,//云存储图片名字
-        
+          cloudPath: "tupian/" + cloudPath,//云存储图片名字
+
           filePath,//临时路径
-        
+
           success: res => {
             console.log('[上传图片] 成功：', res)
             that.setData({
@@ -41,23 +41,23 @@ Page({
             let fileID = res.fileID;
             //把图片存到users集合表
             const db = wx.cloud.database();
-            db.collection("tupian1").add({
+            db.collection("tupian1").doc(id).update({
               data: {
                 path: fileID,
-                 name: tupianmingchen,
-                
+                name: tupianmingchen,
+
                 url: bangdingshuxing
               },
               success: function () {
                 wx.showToast({
-                  title: '图片上传成功',
+                  title: '图片修改成功',
                   'icon': 'none',
                   duration: 3000
                 })
               },
               fail: function () {
                 wx.showToast({
-                  title: '图片上传失败',
+                  title: '图片修改失败',
                   'icon': 'none',
                   duration: 3000
                 })
@@ -65,20 +65,69 @@ Page({
             });
           },
           fail: e => {
-            console.error('[上传图片] 失败：', e)
+            console.error('[修改图片] 失败：', e)
           },
           complete: () => {
             wx.hideLoading()
           }
         });
       }
-      
-    })
-    },
-    xiangqing:function(){
-      wx.navigateTo({
-        url: '/pages/xiangqing/xiangqing'
-      })
 
-    }
+    })
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
 })

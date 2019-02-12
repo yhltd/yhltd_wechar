@@ -41,7 +41,9 @@
    "pages/shouhuodizhi/shouhuodizhi",
    "pages/dingdanxiangqing/dingdanxiangqing",
 "pages/shezhi/shezhi",
-"pages/shezhi1/shezhi1"
+"pages/shezhi1/shezhi1",
+"pages/xiangqing/xiangqing",
+"pages/xiangqingxiugai/xiangqingxiugai"
   ],
   "window": {
    

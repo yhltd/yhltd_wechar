@@ -2,12 +2,13 @@
 
 <view>控制台</view>
 <view class='button'>
-<button class='button1' bindtap='button1' >1</button>
-<button class='button1' >2</button>
-<button class='button1' >3</button>
-<button class='button1' >4</button>
-<button class='button1' >5</button>
-<button class='button1' >6</button>
-<button class='button1' >7</button>
-<button class='button1' >8</button>
+<view class='button1'> <button  bindtap='button1' >1</button>  </view>
+<view class='button1'> <button  bindtap='button1' >2</button>  </view>
+<view class='button1'> <button  bindtap='button1' >3</button>  </view>
+<view class='button1'> <button  bindtap='button1' >4</button>  </view>
+<view class='button1'> <button  bindtap='button1' >5</button>  </view>
+<view class='button1'> <button  bindtap='button1' >6</button>  </view>
+<view class='button1'> <button  bindtap='button1' >7</button>  </view>
+<view class='button1'> <button  bindtap='button1' >8</button>  </view>
+<view class='button1'> <button  bindtap='button1' >9</button>  </view>
 </view>

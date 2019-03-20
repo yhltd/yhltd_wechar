@@ -5,7 +5,7 @@
   <view class="divLine"></view>
 </view>
  <navigator url="/pages/chanpin1/chanpin1?id={{all[i]._id}}">
-<image class="chanpin0-image" src='{{all[i].image1}}' ></image>
+<image class="chanpin0-image" src='{{all[i].path}}' ></image>
 </navigator>
 <text class="chanpin-text">{{all[i].mingzi}}</text>
 <navigator  url="/pages/chanpin1/chanpin1?id={{all[i]._id}}">

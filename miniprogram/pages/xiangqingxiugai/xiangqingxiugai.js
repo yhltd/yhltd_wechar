@@ -13,9 +13,22 @@ Page({
     let openid = app.globalData.openid || wx.getStorageSync('openid');
     var id=e.id;
     console.log(id)
-    var tupianmingchen = e.detail.value.tupianmingchen
-    var lujing = e.detail.value.lujing
-    var bangdingshuxing = e.detail.value.bangdingshuxing
+    // var tupianmingchen = e.detail.value.tupianmingchen
+    // var lujing = e.detail.value.lujing
+    // var bangdingshuxing = e.detail.value.bangdingshuxing
+    var mingzi = e.detail.value.mingzi
+    var chanpinming = e.detail.value.chanpinming
+    var jiagezheng = e.detail.value.jiagezheng
+    var jiagexiao = e.detail.value.jiagexiao
+    var text1 = e.detail.value.text1
+    var text2 = e.detail.value.text2
+    var text3 = e.detail.value.text3
+    var text4 = e.detail.value.text4
+    var text5 = e.detail.value.text5
+    var text6 = e.detail.value.text6
+    var text7 = e.detail.value.text7
+    var text8 = e.detail.value.text8
+
     wx.chooseImage({
       sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
       sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
@@ -40,13 +53,24 @@ Page({
             });
             let fileID = res.fileID;
             //把图片存到users集合表
+            var name3 = wx.getStorageSync("name3")
+            console.log(name3)
             const db = wx.cloud.database();
-            db.collection("tupian1").doc(id).update({
+            db.collection(name3).doc(id).update({
               data: {
                 path: fileID,
-                name: tupianmingchen,
-
-                url: bangdingshuxing
+                mingzi: mingzi,
+                chanpinming: chanpinming,
+                jiagezheng: jiagezheng,
+                jiagexiao: jiagexiao,
+                text1: text1,
+                text2: text2,
+                text3: text3,
+                text4: text4,
+                text5: text5,
+                text6: text6,
+                text7: text7,
+                text8: text8
               },
               success: function () {
                 wx.showToast({

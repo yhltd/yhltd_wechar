@@ -170,9 +170,13 @@
 var app = getApp()
 Page({
   data: {
+    
+    appid: 'wxd747b7dd1d8f9e34',
+    secret: '3199a980a6b595e75c27de6864fdd3a5',
     showView: true,
     text: '\n',
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
+   
     orderItems: [
       {
         typeId: 0,
@@ -201,27 +205,66 @@ Page({
     ],
   },
   //事件处理函数
-
- 
-
-onLoad: function () {
-    var that = this;
+  onLoad() {
     // 查看是否授权
     wx.getSetting({
-      success: function (res) {
+      success(res) {
         if (res.authSetting['scope.userInfo']) {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
           wx.getUserInfo({
-            success: function (res) {
-              //用户已经授权过
-              wx.redirectTo({
-                url: '../yonghu/yonghu'
-              })
+            success(res) {
+              console.log(res.userInfo)
             }
-          });
+          })
+
+          wx.getUserInfo({
+            success(res) {
+              const userInfo = res.userInfo
+              app.globalData.language = userInfo.language
+              app.globalData.nickName = userInfo.nickName
+              app.globalData.avatarUrl = userInfo.avatarUrl
+              app.globalData.gender = userInfo.gender // 性别 0：未知、1：男、2：女
+              app.globalData.openid = userInfo.openid
+              app.globalData.province = userInfo.province
+              app.globalData.city = userInfo.city
+              app.globalData.country = userInfo.country
+              app.globalData.userInfo = userInfo;
+
+              if (app.globalData.gender = 1) {
+                app.globalData.gender = '男'
+              } else if (app.globalData.gender = 2) {
+                app.globalData.gender = '女'
+              } else {
+                app.globalData.gender = ''
+              }
+
+            }
+          })
+
         }
       }
     })
   },
+ 
+
+// onLoad: function () {
+//     var that = this;
+//     // 查看是否授权
+//     wx.getSetting({
+//       success: function (res) {
+//         if (res.authSetting['scope.userInfo']) {
+//           wx.getUserInfo({
+//             success: function (res) {
+//               //用户已经授权过
+//               wx.redirectTo({
+//                 url: '../yonghu/yonghu'
+//               })
+//             }
+//           });
+//         }
+//       }
+//     })
+//   },
   // xieru: function () {
 //     const db = wx.cloud.database();
 
@@ -240,45 +283,134 @@ onLoad: function () {
 //         })
 //         console.log('[数据库] [新增记录] 成功，记录 _id: ', res._id)
 //       },
-  bindGetUserInfo: function (e) {
-    if (e.detail.userInfo) {
-       wx.authorize({
-        scope: 'scope.record',
-        success() {
-          // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
-          // wx.startRecord()
-          wx.login() 
-          const db = wx.cloud.database();
+  // bindGetUserInfo: function (e) {
+  //   if (e.detail.userInfo) {
+  //      wx.authorize({
+  //       scope: 'scope.record',
+  //       success() {
+  //         // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
+  //         // wx.startRecord()
+  //         wx.login() 
+  //         const db = wx.cloud.database();
 
     
-        }
-      })
-    } else {
-      //用户按了拒绝按钮
-      wx.showModal({
-        title: '提示',
-        content: '拒绝授权将无法进入',
-        showCancel: false,
-        confirmText: '返回授权',
-        success: function (res) {
-          if (res.confirm) {
-            console.log('用户点击了“返回授权”')
-          }
-        }
-      })
-    }
-  },
-  onGotUserInfo(e) {
+  //       }
+  //     })
+  //   } else {
+  //     //用户按了拒绝按钮
+  //     wx.showModal({
+  //       title: '提示',
+  //       content: '拒绝授权将无法进入',
+  //       showCancel: false,
+  //       confirmText: '返回授权',
+  //       success: function (res) {
+  //         if (res.confirm) {
+  //           console.log('用户点击了“返回授权”')
+  //         }
+  //       }
+  //     })
+  //   }
+  // },
+// getSession:function(){
+// var that=this;
+// wx.login({
+//   success:function(res){
+//     if(res.code){
+//       wx.request({
+//         url:this.webUrl+'/',
+//       data:{
+//         code:res.code
+//       },
+//       success:function(res){
+//         wx.setStorageSync("sessionID",res.sessionID);
+//       },
+//       fail:function(errMsg){
+//         console.log(errMsg);
+//       }
+//       })
+//     }else{
+//       console.log('shibai',+res.errMsg);
+//     }
+//   }
+// })
+// },
+  onGotUserInfo(res) {
     var that = this;
-    console.log(e.detail.errMsg)
-    console.log(e.detail.userInfo)
-    console.log(e.detail.rawData)
+    console.log(res.detail.errMsg)
+    console.log(res.detail.userInfo)
+    console.log(res.detail.rawData)
+    var requestUrl = wx.getStorageSync("url")
     this.setData({
-      login_name: e.detail.userInfo.nickName,
-      gender: e.detail.userInfo.gender,
+      login_name: res.detail.userInfo.nickName,
+      gender: res.detail.userInfo.gender,
        showView: (!that.data.showView)
         })
-    
-  },
+    wx.request({
+      url: requestUrl,
+      data: {
+        code: res.code
+      },
+      success: function (res) {
+        let ret = res.data;
+        if (ret.status == 200) {
+          // 添加到全局数据的header中
+          app.globalData.header.Cookie = 'JSESSIONID=' + ret.data.sessionid;
+        }
+      }
+    })
  
+  //   var that=this;
+  //   let info = res;
+  //   console.log(info);
+  //   if (info.detail.userInfo) {
+  //     console.log("点击了同意授权");
+  //     wx.login({
+  //       success: function (res) {
+  //         if (res.code) {
+  //           wx.request({
+  //             url: 'https://api.weixin.qq.com/sns/jscode2session?appid=' + that.appid + '&secret=' + that.secret + '&js_code=' + res.code + '&grant_type=authorization_code',
+             
+  //             data: {
+  //               code: res.code,
+  //               nickName: info.detail.userInfo.nickName,
+  //               city: info.detail.userInfo.city,
+  //               province: info.detail.userInfo.province,
+  //               avatarUrl: info.detail.userInfo.avatarUrl,
+              
+  //             },
+             
+  //             header: {
+  //               'content-type': 'application/json' // 默认值
+  //             },
+  //             success: function (res) {
+  //               var userinfo = {};
+  //               userinfo['id'] = res.data.id;
+  //               userinfo['nickName'] = info.detail.userInfo.nickName;
+  //               userinfo['avatarUrl'] = info.detail.userInfo.avatarUrl;
+  //               wx.setStorageSync('userinfo', userinfo) 
+  //               that.setData({
+  //                 login_name: info.detail.userInfo.nickName,
+  //                 // gender: info.detail.userInfo.gender,
+  //                 showView: (!that.data.showView),
+
+  //               })
+                
+
+  //             }
+  //           })
+            
+  //         } else {
+  //           console.log("授权失败");
+  //         }
+  //       },
+  //     })
+
+  //   } else {
+  //     console.log("点击了拒绝授权");
+  //   }
+
+  
+ }
+  
+
 })

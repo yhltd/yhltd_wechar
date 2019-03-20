@@ -1,7 +1,8 @@
 {
   "pages": [
+    
     "pages/shouye/shouye",
-    "pages/index/index",
+   "pages/index/index",
     "pages/shouquan/shouquan",
     "pages/gongsijieshao/gongsijieshao",
     "pages/anlixiangqing/anlixiangqing",
@@ -42,6 +43,7 @@
    "pages/dingdanxiangqing/dingdanxiangqing",
 "pages/shezhi/shezhi",
 "pages/shezhi1/shezhi1",
+"pages/shezhi2/shezhi2",
 "pages/xiangqing/xiangqing",
 "pages/xiangqingxiugai/xiangqingxiugai"
   ],

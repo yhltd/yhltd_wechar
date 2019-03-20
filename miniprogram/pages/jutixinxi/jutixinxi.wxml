@@ -7,10 +7,10 @@
 <view class="divLine"></view>
 </view>
 <view class='text'>
-<view >{{all.text2}}</view>
 <view >{{all.text3}}</view>
 <view >{{all.text4}}</view>
 <view >{{all.text5}}</view>
 <view >{{all.text6}}</view>
 <view >{{all.text7}}</view>
+<view >{{all.text8}}</view>
 </view>

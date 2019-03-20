@@ -32,6 +32,7 @@ Page({
           name: "单片机硬件开发",
           src: app.globalData.imageInfopath + 'wangzhan.png',
           url: "/pages/chanpin1/chanpin1?id=XDgk2nkPDdDCJ3QH"
+          
         },
         {       
           name: "软件开发",
@@ -80,6 +81,9 @@ Page({
   onShow:function(){
     var that = this;
     var all = [];
+    var all1 = [];
+    var all2 = [];
+    var all3 = [];
     const db = wx.cloud.database();
     db.collection('tupian1').get({
       success(res) {
@@ -89,12 +93,62 @@ Page({
         that.setData({
           all: all[0]
         },
-          console.log(all[0])
-        )
         
+        )
       }
     })
+    db.collection('tupian2').get({
+      success(res) {
 
+        all1.push(res.data)
+        
+        // all[0].sort(that.compare("Sort_index"));//排序
+        that.setData({
+          all1: all1[0]
+        },
+         
+        )
+      }
+    })
+    db.collection('tupian3').get({
+      success(res) {
+
+        all2.push(res.data)
+       
+        // all[0].sort(that.compare("Sort_index"));//排序
+        that.setData({
+          all2: all2[0]
+        },
+
+        )
+      }
+    })
+    db.collection('tupian4').get({
+      success(res) {
+        
+        all3.push(res.data)
+        
+        // all[0].sort(that.compare("Sort_index"));//排序
+        that.setData({
+          all3: all3[0]
+        },
+
+        )
+      }
+    })
+    db.collection('tupian5').get({
+      success(res) {
+
+        // all4.push(res.data)
+console.log(res.data)
+        // all[0].sort(that.compare("Sort_index"));//排序
+        that.setData({
+          all4: res.data
+        },
+
+        )
+      }
+    })
   }
   
 

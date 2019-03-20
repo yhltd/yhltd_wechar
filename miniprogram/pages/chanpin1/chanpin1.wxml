@@ -45,6 +45,7 @@
 </view>
 
  <view class='chanpin1-text3'>
+  <view >特点：</view>
  <view wx:if="{{all.text3!=null}}">{{all.text3}}</view>
  <view wx:if="{{all.text4!=null}}">{{all.text4}}</view>
 <view wx:if="{{all.text5!=null}}">{{all.text5}}</view>

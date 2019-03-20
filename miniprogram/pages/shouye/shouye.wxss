@@ -52,12 +52,13 @@ width: 100%
 }
 .zixun{
   display: flex;
-  
+  flex-direction: column;
+ 
 }
 .zixun-image{
   width: 300rpx;
   height: 250rpx;
-  float: left
+  
 }
 .lianxiwomen-image{
    width: 400rpx;

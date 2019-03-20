@@ -66,9 +66,47 @@ Page({
   ,
 
   button1:function(){
+    wx.setStorageSync('name1', 'tupian1')
     wx.navigateTo({
         url: '/pages/shezhi1/shezhi1'
     })
-  }
+  },
+button2: function () {
+  wx.setStorageSync('name1', 'tupian2')
+    wx.navigateTo({
+      url: '/pages/shezhi1/shezhi1'
+    })
+  },
+  button3: function () {
+    wx.setStorageSync('name1', 'tupian3')
+    wx.navigateTo({
+      url: '/pages/shezhi1/shezhi1'
+    })
+  },
+  button4: function () {
+    wx.setStorageSync('name1', 'tupian4')
+    wx.navigateTo({
+      url: '/pages/shezhi1/shezhi1'
+    })
+  },
+  button5: function () {
+    wx.setStorageSync('name1', 'tupian5')
+    wx.navigateTo({
+      url: '/pages/shezhi1/shezhi1'
+    })
+  },
+  button6: function () {
+    wx.setStorageSync('name1', 'xinxi')
+    wx.navigateTo({
+      url: '/pages/shezhi1/shezhi1'
+    })
+  },
+  button7: function () {
+    wx.setStorageSync('name1', 'todos')
+    wx.navigateTo({
+      url: '/pages/shezhi1/shezhi1'
+    })
+  },
+
 
 })

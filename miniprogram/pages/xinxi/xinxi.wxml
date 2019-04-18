@@ -7,8 +7,8 @@
 </view>
 <navigator class='text' url="/pages/jutixinxi/jutixinxi?id={{all[i]._id}}">
 
-<image src='{{all[i].path}}' class='image1'></image>
-<view class='text1' >.{{all[i].mingzi}}
+<image src='{{all[i].image1}}' class='image1'></image>
+<view class='text1' >.{{all[i].text1}}
 
 <image src="cloud://yhltd-028b95.7968-yhltd-028b95/tupian/jinru.png" class='jinru-image'></image>
 <view class='shijianchuo'>{{Y + "/"+M + "/"+D +" "+ h + ":" + m + ":" + s}}</view>

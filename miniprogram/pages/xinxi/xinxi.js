@@ -49,7 +49,7 @@ Page({
     db.collection('xinxi').get({
       success(res) {
         
-       
+       console.log(res.data)
         that.setData({          
           all: res.data
         })

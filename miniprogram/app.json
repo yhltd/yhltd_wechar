@@ -1,8 +1,7 @@
 {
   "pages": [
-    
     "pages/shouye/shouye",
-   "pages/index/index",
+    "pages/index/index",
     "pages/shouquan/shouquan",
     "pages/gongsijieshao/gongsijieshao",
     "pages/anlixiangqing/anlixiangqing",
@@ -34,54 +33,55 @@
     "pages/gouwuche/gouwuche",
     "pages/jiaru/jiaru",
     "pages/goumai/goumai",
-   "pages/jutixinxi/jutixinxi",
-   "pages/daishouhuo/daishouhuo",
-   "pages/fahuozhong/fahuozhong",
- "pages/daifukuang/daifukuang",
-   "pages/daipingjia/daipingjia",
-   "pages/shouhuodizhi/shouhuodizhi",
-   "pages/dingdanxiangqing/dingdanxiangqing",
-"pages/shezhi/shezhi",
-"pages/shezhi1/shezhi1",
-"pages/shezhi2/shezhi2",
-"pages/xiangqing/xiangqing",
-"pages/xiangqingxiugai/xiangqingxiugai"
+    "pages/jutixinxi/jutixinxi",
+    "pages/daishouhuo/daishouhuo",
+    "pages/fahuozhong/fahuozhong",
+    "pages/daifukuang/daifukuang",
+    "pages/daipingjia/daipingjia",
+    "pages/shouhuodizhi/shouhuodizhi",
+    "pages/dingdanxiangqing/dingdanxiangqing",
+    "pages/shezhi/shezhi",
+    "pages/shezhi1/shezhi1",
+    "pages/shezhi2/shezhi2",
+    "pages/xiangqing/xiangqing",
+    "pages/xiangqingxiugai/xiangqingxiugai"
   ],
   "window": {
-   
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff0000",
     "navigationBarTitleText": "云合未来",
     "navigationBarTextStyle": "white"
-  }
-  ,
+  },
   "tabBar": {
     "color": "#a9b7b7",
     "selectedColor": "#1afa29",
     "backgroundColor": "#ffffff",
     "list": [
-      {"iconPath":"images/shouye.png",
+      {
+        "iconPath": "images/shouye.png",
         "pagePath": "pages/shouye/shouye",
-        "selectedIconPath":"images/shouyelv.png",
+        "selectedIconPath": "images/shouyelv.png",
         "text": "首页"
       },
-      {"iconPath": "images/xinxi.png",
+      {
+        "iconPath": "images/xinxi.png",
         "pagePath": "pages/xinxi/xinxi",
         "selectedIconPath": "images/xinxilv.png",
         "text": "信息"
       },
-      {"iconPath": "images/chanpin.png",
+      {
+        "iconPath": "images/chanpin.png",
         "pagePath": "pages/chanpin/chanpin",
         "selectedIconPath": "images/chanpinlv.png",
         "text": "产品"
       },
-      {"iconPath": "images/yonghu.png",
+      {
+        "iconPath": "images/yonghu.png",
         "pagePath": "pages/yonghu/yonghu",
         "selectedIconPath": "images/yonghulv.png",
         "text": "用户"
       }
     ]
-     
-  }
- 
+  },
+  "sitemapLocation": "sitemap.json"
 }
